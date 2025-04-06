@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  DDLoggerSwift
+
+  Created by Damon on 2019/6/24.
+  Copyright © 2019 Damon. All rights reserved.
+*/
+"Device is connected via Wi-Fi" = "设备使用wifi连接";
+"Device is connected via cellular data" = "设备使用流量连接";
+"Device DNS service is functioning properly" = "设备DNS服务正常";
+"Device supports IPv4 access" = "设备支持ipv4访问";
+"Device supports IPv6 access" = "设备支持ipv6访问";
+"Device is in a restricted mode such as Low Data Mode" = "设备在低数据模式等受限模式";
+"Device connection to the server is normal" = "设备连接服务器正常";
+"Device connection to Apple servers is normal" = "设备连接苹果服务器正常";
+"Device server access speed" = "设备访问服务器速度";
+"Device Apple server access speed" = "设备访问苹果服务器速度";
+"Device is using a VPN" = "设备正在使用VPN";
+"Device is using a proxy" = "设备正在使用代理";
+"Server Connection Status" = "服务器连接状态";
+"Response Time" = "访问速度";
+"Failed" = "失败";
+"App Server Connection Test" = "APP服务器连接测试";
+"Common Website Network Test" = "常用网站网络测试";
+"Device Network Status" = "用户设备网络状态";
+"Success" = "成功";
+"Device Not Connected to Network" = "设备未连接网络";
+"Request Timed Out" = "访问超时";
+"DNS Resolution Error" = "DNS解析错误";
+"SSL Certificate Error" = "SSL证书错误";
+"Abnormal Server Response" = "服务器响应异常";
+"Unknown Server Error" = "服务器未知错误";

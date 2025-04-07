@@ -1,0 +1,6 @@
+framework module DDNetCheck {
+  umbrella header "DDNetCheck-umbrella.h"
+
+  export *
+  module * { export * }
+}

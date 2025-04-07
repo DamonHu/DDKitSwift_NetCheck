@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  DDLoggerSwift
+
+  Created by Damon on 2019/6/24.
+  Copyright © 2019 Damon. All rights reserved.
+*/
+"Device is connected via Wi-Fi" = "Device is connected via Wi-Fi";
+"Device is connected via cellular data" = "Device is connected via cellular data";
+"Device DNS service is functioning properly" = "Device DNS service is functioning properly";
+"Device connection to the server is normal" = "Device connection to the server is normal";
+"Device connection to Apple servers is normal" = "Device connection to Apple servers is normal";
+"Device server access speed" = "Device server access speed";
+"Device Apple server access speed" = "Device Apple server access speed";
+"Server Connection Status" = "Server Connection Status";
+"Response Time" = "Response Time";
+"Failed" = "Failed";
+"App Server Connection Test" = "App Server Connection Test";
+"Common Website Network Test" = "Common Website Network Test";
+"Device Network Status" = "Device Network Status";
+"Success" = "Success";
+"Device Not Connected to Network" = "Device Not Connected to Network";
+"Request Timed Out" = "Request Timed Out";
+"DNS Resolution Error" = "DNS Resolution Error";
+"SSL Certificate Error" = "SSL Certificate Error";
+"Abnormal Server Response" = "Abnormal Server Response";
+"Unknown Server Error" = "Unknown Server Error";
+"Device is accessing via IPv4" = "Device is accessing via IPv4";
+"Device is accessing via IPv6" = "Device is accessing via IPv6";
+"Device is not restricted (Low Data Mode)" = "Device is not restricted (Low Data Mode)";
+"Device is not using a VPN" = "Device is not using a VPN";
+"Device is not using a proxy" = "Device is not using a proxy";

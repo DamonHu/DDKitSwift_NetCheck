@@ -7,144 +7,791 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F6561AD9F796134DDC9794D482CB3A /* DDPingTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C6BA73E5DEAD68AFF692FE68BA5820F /* DDPingTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04AC9D6484EBE6918EC8E2B32D214BAE /* DDPingTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3FC88E479708F8E9B852AF7ECEEE29 /* DDPingTools-dummy.m */; };
-		0F59E242D831726EAABF5589ED6E2FC8 /* DDPingNetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6ABFB07EC36A4A12978C40F171EB3 /* DDPingNetworkActivityIndicator.swift */; };
-		33A4099AECE094F67E43FEB9954BBE3E /* DDPingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F19C8244491A6D8FAF1F758D929FF /* DDPingTools.swift */; };
-		49794FDB663E796ADFCA055C89CA723E /* Pods-DDNetCheck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D4D8E05B89476F7314B5848F3E965D /* Pods-DDNetCheck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5900D8D6F8C0BC8F7F590A4EDAD4092F /* Pods-DDNetCheck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772C5648C0F197746C6476B7EFC2710 /* Pods-DDNetCheck-dummy.m */; };
-		5A954E849E58ED80820D0D31083126AD /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C835FAA76AE439472FEE61B846E5523 /* SimplePing.m */; };
-		9236AE2C775B0FD2AEB2B035697947C5 /* DDPingTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6AEB0B7023A02580F9241C0235DC3D /* DDPingTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A23EDAAB4535386C2118F52E932BF244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		BCFA1E9D010062C4A0B6CA5B9FE45168 /* SimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 722D3B75E25CFD3A9716CBE95142DB8F /* SimplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDF64F19E42947CA39DD6ED7057C1355 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		01D2FEA776F65BE46FA45345FBF4C877 /* CircleMenuMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F728DFE22330460B2598D763EEDA764 /* CircleMenuMaskView.swift */; };
+		02208C6B5226DDE7AE7A4FE14F374A0D /* DDLoggerSwiftItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28ACDF8BA48FF1A61D5CFABBB97AFE /* DDLoggerSwiftItem.swift */; };
+		027ACE130449D81E0B675543DFB4AE68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCBEAE335AA31A77580427911F1DFC33 /* Localizable.strings */; };
+		03C706D08834915897AB13BD9287037F /* icon_search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35CB458C6C81554554B2D918BA15F7 /* icon_search@3x.png */; };
+		04418E32C7844740988EE40B636A4D76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		07A66D68CDABBEBF0802B30FF57C3DA7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0920C86634AE6AD463DE5DA7E8524AF8 /* CircleMenuLoader.swift */; };
+		0A49906B1847B2DCA690DAFF6008F146 /* DDNetCheck-DDNetCheck in Resources */ = {isa = PBXBuildFile; fileRef = EFC2DD1C4CD151BEC83C0B936F6C5285 /* DDNetCheck-DDNetCheck */; };
+		0BDB1AB78F09E04B19F52C240F45A625 /* icon_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2F526BF3A2BC5E0A025BF5BAA7E6E6 /* icon_search.png */; };
+		0DC66FAC5B358C76E40FC44096DD09A5 /* DDLoggerSwiftFilterTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894946D01E5E4A696733B6A26AD47D4F /* DDLoggerSwiftFilterTypeView.swift */; };
+		0FC334B9D1E9220400EA1A1FBCF2BCC8 /* icon_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6117C17BCCB4736D77B0C94268F9A5B7 /* icon_close@3x.png */; };
+		1098D4E7F1143BF5452EBC80EE2D147C /* SimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 576FC8D434EB762ACFA413589EBDA244 /* SimplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		116406C3A97C55C3DB97C0708A8ADF4C /* log_icon_subtract.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C4F1BC6B0D63660B6C31C25E8FE53D /* log_icon_subtract.png */; };
+		12EEC0E1CF4207DCA5B0B164632AC565 /* logger_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B345E355F8AAC2CA612550D969BA3A70 /* logger_logo@3x.png */; };
+		1338875BC3D743410369503AED8982AC /* DDKitSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C12F8AB7E7CBAEE0646484AF5A1DAF1E /* DDKitSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179B6A4275AB7D19B23E048D83F92274 /* DDUtils+media.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE782DBAF02570EDDD8C656EAC0A5E7 /* DDUtils+media.swift */; };
+		1A95B9973829E4145283D463BEF5E34C /* icon_decrypt.png in Resources */ = {isa = PBXBuildFile; fileRef = B09E8701B88BD2192D3E4B554B79A8FB /* icon_decrypt.png */; };
+		28B0A1E5CA2A1B7AA34913786BF41EAC /* icon_upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 2490F79156CAB0288D6CE454239356DD /* icon_upload.png */; };
+		29B6E794A903A97493785418F0A4931A /* DDLoggerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 552BDE304866370B480920B0770E4086 /* DDLoggerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D510D28BB403C410AF644728A9B94D9 /* DDNetCheckTableViewTestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556056120BA4465F86E771E582EE4276 /* DDNetCheckTableViewTestCellModel.swift */; };
+		2EEE7DED42AFC6BDF14ECBD208376EC4 /* notAvailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E16FD48F7ACA520B29D22B080EC3810 /* notAvailable.png */; };
+		30C40E40BB467E5C44711B6B78268B99 /* icon_list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F9D913A11382B7F21FF244FC1915E2 /* icon_list@3x.png */; };
+		3537C7CC670C0FB45F2407628889EB03 /* DDLoggerSwiftFloatWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3D7E4840B3065300F81EFFC4D1657 /* DDLoggerSwiftFloatWindow.swift */; };
+		362BAF606C28C7519FCB52D86666EE92 /* String+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4A6A48702399913ABECADE07883B0 /* String+zx.swift */; };
+		3711C6C85B9EFA54E719DE7AF557D823 /* DDLoggerSwiftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCE1A3BF5BC182DEDAD4C69515F21D /* DDLoggerSwiftTableViewCell.swift */; };
+		39051546994D5D9175DB7AC16792BDAF /* log_icon_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCF8F04A31D499889932D6DB8D11C1A /* log_icon_scale.png */; };
+		39137C95B29E9F75CBAA921DA20B1430 /* isConstrained.png in Resources */ = {isa = PBXBuildFile; fileRef = 143BFF77764C746601E29518A615F6E3 /* isConstrained.png */; };
+		3A8957F760DAF3F45FE3ACC2B26F0BA2 /* localizable in Resources */ = {isa = PBXBuildFile; fileRef = D7CDFE35001EE62E3DD4B1765C684887 /* localizable */; };
+		3D6E77FAF8577AADCE15F44A896C8CEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB0FA819F1611DBECB067BB1552E6457 /* Localizable.strings */; };
+		3DE79E749164120F53C48C403DE2A7E2 /* icon_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DCDF297C28E1C1863211D0D51DD6F2 /* icon_copy.png */; };
+		3E224DC7AA2925DD1B30A7925C9FAFEC /* DDNetCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168B56EAD18BCEF4FCA8376CA79DFD33 /* DDNetCheckTableViewCell.swift */; };
+		40C4478D3E0EE4E1D9B15831ED3BEEB5 /* localizable in Resources */ = {isa = PBXBuildFile; fileRef = CDF76B5212E136613FB75A6FCCC6C7D3 /* localizable */; };
+		41DCA0AF4CD076FC2CAB17431B9C000B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		43E4506EABFA8D2C116D8125F78C3FD7 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 7A738E84D61E9EBC88EFB0DD831E32C2 /* icon */; };
+		43EF942E415F60134552F087D6A0D63F /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3342C1B8A826C0408BE329387CA86C03 /* icon_back.png */; };
+		48106A81397F8F72B93462754BED07A4 /* icon_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 067837C2EE9737587F8090C4A07656AB /* icon_setting@3x.png */; };
+		4A8813F7FB9218249DCE2B4C0CAA5834 /* Date+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA08894FA4D51CACF1F01E78BC394D /* Date+zx.swift */; };
+		4AFA48D94AE62C70AE4648ACF1E78923 /* DDNetCheckTableViewPlatformCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDCDB42BBAE47C0FF15FCC6E011114 /* DDNetCheckTableViewPlatformCellModel.swift */; };
+		4E6F17F3C0B5C64EB60EDDAD295EB97A /* proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B03FDFC62B34F9E2ACAA3BBB2505F60 /* proxy.png */; };
+		50AE432A0D899CB207A980F61A3FB10E /* icon_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 7717BE4DC647F4B6488B15BE2E14E4E6 /* icon_share.png */; };
+		5310370FB080952F2476FF9DBD78117B /* DDPingTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB9B7C3025BBCAD620D91A6F3E3902 /* DDPingTools-dummy.m */; };
+		53AB5BA33E6D569F9B086A4944A7E939 /* DDKitSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E4EA0DF99CEA77794070AA43F67D7 /* DDKitSwift.swift */; };
+		5ADCF879D3DA5591137D03A1945DABDB /* ipv4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B30E9EC79664804D415525DD19A80D0 /* ipv4.png */; };
+		5D6C4798D196AF3B5EA9AC5D27496EC0 /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38C2166E0E03E0A9E6E4FAD9D2D05CF /* CircleMenuButton.swift */; };
+		60480B74A627A0EAB347DA19AB1AA671 /* DDLoggerSwiftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B41B465C479821D2947C1B100A329 /* DDLoggerSwiftMenuView.swift */; };
+		6180340255F62B15B6A4F92787C5C675 /* DDKitSwiftPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F40A7B689395353A059AF7C1845DDF8 /* DDKitSwiftPluginProtocol.swift */; };
+		62075A472A82961E2304994C898D3649 /* DDKitSwiftCollectionViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C020022780A9AD2005BFA36CCC534AA /* DDKitSwiftCollectionViewHeaderView.swift */; };
+		62593468596BAFBE1A6847D380D5286D /* icon_analyse.png in Resources */ = {isa = PBXBuildFile; fileRef = 63934461398A9CC501E0AC6BBF238FFE /* icon_analyse.png */; };
+		62FE746F3DEAC7FD3D9C06B5EEF1CA07 /* DDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18990AC7168A3964B354A26AEF84B7F9 /* DDUtils.swift */; };
+		638C91908CBC936F827C9A5BC321A2F1 /* DDNetCheck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C34950C7BA0E0A01BCB08E45D5501E4 /* DDNetCheck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66CE5F73966C669C4C80B8AA41748A49 /* DDNetCheckStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58181C362328B0C0B444E41E55D57E59 /* DDNetCheckStatusView.swift */; };
+		6824E2F0049ACC2A4425B87362D4A482 /* appleServerConnected.png in Resources */ = {isa = PBXBuildFile; fileRef = BC36420B9672FD709EE9FB53CC0002EE /* appleServerConnected.png */; };
+		6B1B26DFC2F5E4D689AF6646FDE6D3AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		6E946ABFFBF36242EB25DF33FE2243BD /* appleServerPing.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A619BFAD2355E79D038B8A3B8FBFA /* appleServerPing.png */; };
+		6EF2E41F46570DEECFE9F6F777DFA603 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = D4CBC9A0BB2154E92D249A8F8BB026D0 /* icon */; };
+		72D4E64220A6D4C3CCA6B11583830EEE /* DDNetCheckTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3900855E333939FE8CB30B95BA2C42 /* DDNetCheckTableViewCellModel.swift */; };
+		739528D54E11F3997FE93D484D77E57E /* LogContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6EB3A77343C350EA7526D8D363EF2 /* LogContent.swift */; };
+		7557A4510C85B419E227AADBE6AB1A03 /* DDPingTools.h in Headers */ = {isa = PBXBuildFile; fileRef = CF72FEC13AA8B5F0E66A274996E55200 /* DDPingTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77915504FBD3886B4A1DF2C72DFE8EC4 /* DDLoggerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7BC0A711EE82B16F5AF2743B85BD5 /* DDLoggerSwift-dummy.m */; };
+		78741D39C496E0D714CBA9301383ACF1 /* DDLoggerSwift+ddkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383DB0D4054FA5777D4EC0523153B8F /* DDLoggerSwift+ddkit.swift */; };
+		78E8C26330E6DBB5ECAAFB30C8DB4F8E /* localizable in Resources */ = {isa = PBXBuildFile; fileRef = 9786C3F8F3C3E0B4D955F47140A2EE4C /* localizable */; };
+		7B52361DEFB18DD55A9C5DC55E023922 /* icon_exit.png in Resources */ = {isa = PBXBuildFile; fileRef = ECEC5258747408A7896392DFE126D239 /* icon_exit.png */; };
+		7C21AF72F1A360717BFF7DADCC9A6A6E /* DDUtils+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708B60DA5CA3A02CDFDE99FECC301CA /* DDUtils+UI.swift */; };
+		7D575CAAC7DF0FB0ACEB30FC1FBAD130 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DAFCCC0FF49517CC6CF99901C4300 /* SimplePing.m */; };
+		7EADC8C07C007FC3FF2B34DBC1DDA2EA /* Data+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022162621DF9669C5B5DB0D811E94D8A /* Data+zx.swift */; };
+		7F135A549107DB469BCD8E4C6EB89F9F /* DDLoggerSwiftMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C7192A52AA30D6F01E795DD90F31D5 /* DDLoggerSwiftMenuCollectionViewCell.swift */; };
+		86083A8EC9BF0122D2817AF2F6DC7D26 /* DDNetCheckTableViewWebCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82EF47058A97CE41F93EBFA7DD2950 /* DDNetCheckTableViewWebCellModel.swift */; };
+		862FEFA241B0F84D2D73CCECDD07E936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		86C73F0FE139BB0910AD7B16CA3919E1 /* DDNetCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C89C49B3AFC924D4987660F398CB2 /* DDNetCheckVC.swift */; };
+		8AB1E28AA41C9032F83015893558A583 /* ipv6.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A4387D79745BB96119A9BFE7E2A3AA /* ipv6.png */; };
+		8EBF9DFA5CCB40B379D73828787B572B /* DDNetCheck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2D768851410FA190998A970D1E80A /* DDNetCheck-dummy.m */; };
+		918EB9547B1C4CE06B1BC70882290A9B /* DDLoggerSwift-DDLoggerSwift in Resources */ = {isa = PBXBuildFile; fileRef = 6EE26D836377CA863AAAF9260E9EA901 /* DDLoggerSwift-DDLoggerSwift */; };
+		931274F4B9AD9A4BE86D4A97920E246D /* UIView+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D705C6E9EE7AB2356625CF18491054 /* UIView+zx.swift */; };
+		93EC0BC38CA1332CB3B23BAB7D634B43 /* log_icon_close.png in Resources */ = {isa = PBXBuildFile; fileRef = C182C81C87FC9191546315872B325CC0 /* log_icon_close.png */; };
+		9825D1A2CB7DF430481759C439C6912A /* DDKitSwiftPluginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDB897322518B6212F37C8DB266660 /* DDKitSwiftPluginCollectionViewCell.swift */; };
+		9A18A604944F9A28DE60A1B5A82D640A /* DDKitSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6C121B699E064252339BB0D3C759C /* DDKitSwift-dummy.m */; };
+		9CE24A4AC9E41A6D5531722EC78D135C /* DDKitSwift-DDKitSwift in Resources */ = {isa = PBXBuildFile; fileRef = 67832819087A20EE754DB49E95EE7861 /* DDKitSwift-DDKitSwift */; };
+		9E7BDD5FB40E750F196EEBDFEDB65E7C /* DDUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAAAE4671E8191EF406BA0BF0037797 /* DDUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0F36C3C562159B18B181C2D6C227AE2 /* DDNetCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540ED93C47BD7DF9BF3AA0ACA03D186 /* DDNetCheck.swift */; };
+		A2E05083EB903E2279BE522B29D94933 /* DDKitSwiftFloatWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3ACA12CD11C84F66493CBE6E5386EF /* DDKitSwiftFloatWindow.swift */; };
+		AADEC3E2C880E9D70A6977E2D6C8055E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7855D068956BF646D92964DC85D61EA /* Localizable.strings */; };
+		AC78ED3F1BA44FFD34A98F3472C5BC23 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 93B5D214CDEDB902898E9BA029AE697D /* icon */; };
+		B0A5D12F018EACA3B512D61D9325B1DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		B0C169C0855EF74E3DE92931245E83FE /* log_icon_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 4178029AA688D62799A25AF323C61DBE /* log_icon_scale.png */; };
+		B1562F348E83D8A892EB9B44B4C6A65F /* DDLoggerSwiftTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F248A4CC469D9D1ADCBBB1D87A8DEF /* DDLoggerSwiftTableCellModel.swift */; };
+		B20F7E8C7DF5630884E1358FDDA3AD30 /* DDKitSwiftWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76DFDB9755B7872B3A626C61108F43 /* DDKitSwiftWindow.swift */; };
+		B34E14ED7B5275A839161430EAB0DEF5 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE0BD2378F268AE06D51EF23F70EA8 /* CircleMenu.swift */; };
+		B5EA916BC6772FE538CF2FD199341A3A /* DDLoggerSwiftPickerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D271EF38B52F592C56B3455AE594742 /* DDLoggerSwiftPickerWindow.swift */; };
+		B8CDA19557DCD87F0E235182E93C4C0A /* DDLoggerSwiftWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0EF2F15E84C42829F1533D8AB5520 /* DDLoggerSwiftWindow.swift */; };
+		B997B96B025602CC82E0EA85381BC983 /* dns.png in Resources */ = {isa = PBXBuildFile; fileRef = 9874310B149AE3A914D35FD5EE5186D0 /* dns.png */; };
+		BCF1898349E1D5421722B9B0614F9EC5 /* isConnected.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FF724D2D6EFD35ADBDA38BBCE91CEB /* isConnected.png */; };
+		BD678579C972DBD9526417C5197574B2 /* HDSqliteTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BE8DE31DBD90A9EECFABA87BB7330 /* HDSqliteTools.swift */; };
+		C0130109996DC1D3A64CE8C88DDBA18E /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = 78FD62BEA27F732D10338162C7F1426C /* icon-success.png */; };
+		C091F4676BE773478092FF0846215573 /* DDUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31CB65E69A7102A42BFDCCD35779D9 /* DDUtils-dummy.m */; };
+		C16E7A8919A4CD1B0BD99AC5147C821D /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC02DC9C277FB40CB62284BA71488CE /* wifi.png */; };
+		C331AF4FC7083C9A9DACBA0DE280579C /* zx_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C924D48A8F13F9A563DFDE20471DE151 /* zx_logo@3x.png */; };
+		C403B94DB3718B68EE15A58B9B7718E7 /* DDPingTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26DB1407C3A3A1040E0FC7DBF05C41 /* DDPingTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4A9A327DD6FD5EC7A3C4E23A6336A35 /* UIImage+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1071E91418204D27DAE68D8893FD392D /* UIImage+zx.swift */; };
+		C5B0587CA71F335B3D90161EB92D1C77 /* log_icon_subtract.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F1E032E10BEF31D7F6658C408888F9 /* log_icon_subtract.png */; };
+		C6C551FDC967CBD23054BBCF63B60EED /* UIColor+zx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CABB38C140C3105E659DE4165B8061 /* UIColor+zx.swift */; };
+		C8B835257099F634CED70CF733CA6D03 /* cellular.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C185C7F134B1F56DD540228A4191FC /* cellular.png */; };
+		C982DBA9F6DF6D6A2566453D52C8AF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		D014B08DF7876F4A04EDC5FE4263F708 /* icon_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 4771F977D0CDCC92B0CF8ED3FFA1B8D1 /* icon_scale.png */; };
+		D458FC4830EE7BAA042D2BBFAD250411 /* icon_hide.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B78A31F02C16ABE09DD419C3732AD59 /* icon_hide.png */; };
+		D4A31336E230210975E4D39F98BE9A09 /* DDUtils+system.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA95C73CB26C897DD8647B74375C0C5 /* DDUtils+system.swift */; };
+		D5A59BC98B470F60F93EE5765B046DC5 /* icon_normal_back.png in Resources */ = {isa = PBXBuildFile; fileRef = A13780BD5170EDAEB9F42A072080EAA9 /* icon_normal_back.png */; };
+		D616071BDDA8ADA304F0A7219BB4FDBD /* DDPingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043F9292692EAAFE7E199D9CFABF8A2 /* DDPingTools.swift */; };
+		D99947831785536D9B10D8F423C5426B /* DDUtils+AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D366E871E2BA2B064632A0CF68071CA /* DDUtils+AppStore.swift */; };
+		DBE1338DBD2DE5560434B943A14ADEE8 /* DDUtilsNameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C05B0D14F8CEA1422F1D17ADDFFC03 /* DDUtilsNameSpace.swift */; };
+		E6B10A6A64C47914B214237B5DEC0BDB /* vpn.png in Resources */ = {isa = PBXBuildFile; fileRef = F0568356F2099842238C08CD276B4FFC /* vpn.png */; };
+		E7EADADB7BB527B21DFA505B0E6CBB0F /* DDUtils+file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5669EE3D376CFFA018254F17F43917A4 /* DDUtils+file.swift */; };
+		EAF47A758D21613AF44A9BA543A6978D /* DDKitSwiftUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCCCF32DA105D836BB35AC863ACFB8 /* DDKitSwiftUIConfig.swift */; };
+		ECFE7AA7ADADB07FD25D9E7317592F0E /* icon_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = AED521DE32E18F4567D3731017C47EBE /* icon_delete.png */; };
+		ED483A4220115AE1560D8C2E124152CA /* Pods-DDKitSwift_NetCheck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30263A6D9598AAA1BD2C42364CB5565C /* Pods-DDKitSwift_NetCheck-dummy.m */; };
+		EFFBFC3DF79D82318D72AD1ECE5CC127 /* icon-failed.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D6C4CCB0A24396C86DAD0E32987FC1 /* icon-failed.png */; };
+		F29E4C32D452939A0674A5EA368EABFD /* DDLoggerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6300DBA499B1FD0E937E0EDEBC86F /* DDLoggerSwift.swift */; };
+		F400670397A1EF7DAD98A7515B7D02CD /* Pods-DDKitSwift_NetCheck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4681057DFA221A27557750BCA8FC3F5B /* Pods-DDKitSwift_NetCheck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F659175E348507F93E83080F183C2647 /* log_icon_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 051BCAB11D374FC287F11138F58E0717 /* log_icon_close.png */; };
+		F96319A8F9C5F729D85C57C9D43A56C2 /* DDPingNetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C6935EA6ADA123EE28BAAF6875986E /* DDPingNetworkActivityIndicator.swift */; };
+		FC71330EF02A65CB919225DBB79408E0 /* icon_scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF30DAC55CDF1F5AE548012CCB14A1E /* icon_scroll.png */; };
+		FCB192186C9C357815798F11673CBD91 /* ping.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABF9563533A538C21B156099515F454 /* ping.png */; };
+		FDBE27E754F8D3795AF90D8DA6EE9D05 /* icon_home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CC32309B6C1C28E629D8CE94C9B26C /* icon_home@3x.png */; };
+		FF1F57978E0B4B90EB9F86DC68C24301 /* icon_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F0B176C42933FAC528A667248AC924 /* icon_share@3x.png */; };
+		FF23863769661FCF8415DCA1E14FAE32 /* icon_notice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D753B16C17A99B36D7ED50F9DCD9651 /* icon_notice@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CC6FB7946802472D031A6C4904DA73B /* PBXContainerItemProxy */ = {
+		43B89592ABBD59F542052A90AB5BD0E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075933A99604C7F20A75FE3342978E35;
+			remoteInfo = "DDNetCheck-DDNetCheck";
+		};
+		4DF19A9869D36F3900D18AF008AF17B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 64DE6FB8B8F7C02735674E52FC29E141;
 			remoteInfo = DDPingTools;
 		};
+		591C31EA64AFDCCF7870CB80DD0911D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763460C4E0B28EA6B8A750D8642AF267;
+			remoteInfo = DDUtils;
+		};
+		59461CC0B8B29625249C6E9FCA6CA999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763460C4E0B28EA6B8A750D8642AF267;
+			remoteInfo = DDUtils;
+		};
+		61763D296EED1BD287AF631AC2D48968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1166E0B033B5DCD8B18503328A162BD;
+			remoteInfo = DDLoggerSwift;
+		};
+		7277187EA1F25359D3F50177A9EF9A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763460C4E0B28EA6B8A750D8642AF267;
+			remoteInfo = DDUtils;
+		};
+		78297C64471E2E2B1517822F8A576FBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1199A23AE1EAA19934856C5359B5D5BE;
+			remoteInfo = DDKitSwift;
+		};
+		A20A6290ECFAEF8D446063A25A3DE556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53280B0B690F632E21ADED6BA1A17543;
+			remoteInfo = "DDLoggerSwift-DDLoggerSwift";
+		};
+		AF8DB1A896828CAB2BDB9022700191E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64DE6FB8B8F7C02735674E52FC29E141;
+			remoteInfo = DDPingTools;
+		};
+		BC06536EFCA9ECB45DF81153CF7726FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1166E0B033B5DCD8B18503328A162BD;
+			remoteInfo = DDLoggerSwift;
+		};
+		C8D2F7D107E5D5C8D109EFD6DB0C4659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E903540BB2AEB597EFBFC8F5F01C33F;
+			remoteInfo = "DDKitSwift-DDKitSwift";
+		};
+		F8B2769F1653161E82E47DC77CF8C720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6711AC8E36E99F0C279C118DB91FEDDC;
+			remoteInfo = DDNetCheck;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0772C5648C0F197746C6476B7EFC2710 /* Pods-DDNetCheck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDNetCheck-dummy.m"; sourceTree = "<group>"; };
-		167CB35BD52938A14E377D998F22457B /* Pods-DDNetCheck */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDNetCheck"; path = Pods_DDNetCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F0F19C8244491A6D8FAF1F758D929FF /* DDPingTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPingTools.swift; path = pod/DDPingTools.swift; sourceTree = "<group>"; };
-		2E6AEB0B7023A02580F9241C0235DC3D /* DDPingTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDPingTools.h; path = pod/DDPingTools.h; sourceTree = "<group>"; };
+		01C1B74379F4562AE49B8FDF637C9F39 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		022162621DF9669C5B5DB0D811E94D8A /* Data+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+zx.swift"; path = "Sources/core/utils/Data+zx.swift"; sourceTree = "<group>"; };
+		051BCAB11D374FC287F11138F58E0717 /* log_icon_close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_close.png; path = pod/assets/icon/log_icon_close.png; sourceTree = "<group>"; };
+		05A1A3A3DC189CF91A0E35670D8B9C93 /* Pods-DDKitSwift_NetCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDKitSwift_NetCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		05F1E032E10BEF31D7F6658C408888F9 /* log_icon_subtract.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_subtract.png; path = pod/assets/icon/log_icon_subtract.png; sourceTree = "<group>"; };
+		067837C2EE9737587F8090C4A07656AB /* icon_setting@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_setting@3x.png"; path = "pod/assets/icon/icon_setting@3x.png"; sourceTree = "<group>"; };
+		08C185C7F134B1F56DD540228A4191FC /* cellular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cellular.png; path = Pods/assets/icon/cellular.png; sourceTree = "<group>"; };
+		0920C86634AE6AD463DE5DA7E8524AF8 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = pod/menu/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+		0B03FDFC62B34F9E2ACAA3BBB2505F60 /* proxy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = proxy.png; path = Pods/assets/icon/proxy.png; sourceTree = "<group>"; };
+		0B57D48530EAD0690F78C6682BD3E302 /* DDNetCheck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDNetCheck.modulemap; sourceTree = "<group>"; };
+		0C020022780A9AD2005BFA36CCC534AA /* DDKitSwiftCollectionViewHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftCollectionViewHeaderView.swift; path = pod/DDKitSwiftCollectionViewHeaderView.swift; sourceTree = "<group>"; };
+		0C3ACA12CD11C84F66493CBE6E5386EF /* DDKitSwiftFloatWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftFloatWindow.swift; path = pod/DDKitSwiftFloatWindow.swift; sourceTree = "<group>"; };
+		0F40A7B689395353A059AF7C1845DDF8 /* DDKitSwiftPluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftPluginProtocol.swift; path = pod/DDKitSwiftPluginProtocol.swift; sourceTree = "<group>"; };
+		1071E91418204D27DAE68D8893FD392D /* UIImage+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+zx.swift"; path = "Sources/core/ui/UIImage+zx.swift"; sourceTree = "<group>"; };
+		11A759752C23B7D6EECE68CFD0EE93D3 /* ResourceBundle-DDLoggerSwift-DDLoggerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DDLoggerSwift-DDLoggerSwift-Info.plist"; sourceTree = "<group>"; };
+		1289E256FDECE47A237C0C7355A81189 /* DDNetCheck-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDNetCheck-Info.plist"; sourceTree = "<group>"; };
+		143BFF77764C746601E29518A615F6E3 /* isConstrained.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = isConstrained.png; path = Pods/assets/icon/isConstrained.png; sourceTree = "<group>"; };
+		168B56EAD18BCEF4FCA8376CA79DFD33 /* DDNetCheckTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckTableViewCell.swift; path = Pods/view/DDNetCheckTableViewCell.swift; sourceTree = "<group>"; };
+		18990AC7168A3964B354A26AEF84B7F9 /* DDUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDUtils.swift; path = Sources/core/core/DDUtils.swift; sourceTree = "<group>"; };
+		19EE36916AA8B7D663E9009C4E491030 /* DDUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDUtils.modulemap; sourceTree = "<group>"; };
+		1B82EF47058A97CE41F93EBFA7DD2950 /* DDNetCheckTableViewWebCellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckTableViewWebCellModel.swift; path = Pods/model/DDNetCheckTableViewWebCellModel.swift; sourceTree = "<group>"; };
+		1CFDB897322518B6212F37C8DB266660 /* DDKitSwiftPluginCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftPluginCollectionViewCell.swift; path = pod/DDKitSwiftPluginCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E6C89C49B3AFC924D4987660F398CB2 /* DDNetCheckVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckVC.swift; path = Pods/DDNetCheckVC.swift; sourceTree = "<group>"; };
+		1EB7049808B811240F761A3D112D415B /* DDNetCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDNetCheck.debug.xcconfig; sourceTree = "<group>"; };
+		2043F9292692EAAFE7E199D9CFABF8A2 /* DDPingTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPingTools.swift; path = pod/DDPingTools.swift; sourceTree = "<group>"; };
+		20CC32309B6C1C28E629D8CE94C9B26C /* icon_home@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_home@3x.png"; path = "pod/assets/icon/icon_home@3x.png"; sourceTree = "<group>"; };
+		2325EDA752707C24279F84195E767E2F /* DDPingTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDPingTools.debug.xcconfig; sourceTree = "<group>"; };
+		2490F79156CAB0288D6CE454239356DD /* icon_upload.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_upload.png; path = pod/assets/icon/icon_upload.png; sourceTree = "<group>"; };
+		252EB1C758F6890AF344404F105ADB2F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		267A619BFAD2355E79D038B8A3B8FBFA /* appleServerPing.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = appleServerPing.png; path = Pods/assets/icon/appleServerPing.png; sourceTree = "<group>"; };
+		27A87C460ADDB1D6C1B2971BD7C28B91 /* DDNetCheck */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDNetCheck; path = DDNetCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F9D913A11382B7F21FF244FC1915E2 /* icon_list@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_list@3x.png"; path = "pod/assets/icon/icon_list@3x.png"; sourceTree = "<group>"; };
+		2A187541766C11E2E56BF92E9B4CA20D /* DDUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDUtils-prefix.pch"; sourceTree = "<group>"; };
+		2ABF9563533A538C21B156099515F454 /* ping.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ping.png; path = Pods/assets/icon/ping.png; sourceTree = "<group>"; };
+		2B26DB1407C3A3A1040E0FC7DBF05C41 /* DDPingTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDPingTools-umbrella.h"; sourceTree = "<group>"; };
+		2BF30DAC55CDF1F5AE548012CCB14A1E /* icon_scroll.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_scroll.png; path = pod/assets/icon/icon_scroll.png; sourceTree = "<group>"; };
+		2C0851D12BB2B9EC4078456479687807 /* DDLoggerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDLoggerSwift.release.xcconfig; sourceTree = "<group>"; };
+		2CDCCCF32DA105D836BB35AC863ACFB8 /* DDKitSwiftUIConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftUIConfig.swift; path = pod/DDKitSwiftUIConfig.swift; sourceTree = "<group>"; };
+		2D271EF38B52F592C56B3455AE594742 /* DDLoggerSwiftPickerWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftPickerWindow.swift; path = pod/DDLoggerSwiftPickerWindow.swift; sourceTree = "<group>"; };
+		2D366E871E2BA2B064632A0CF68071CA /* DDUtils+AppStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDUtils+AppStore.swift"; path = "Sources/core/ui/DDUtils+AppStore.swift"; sourceTree = "<group>"; };
+		2F2F526BF3A2BC5E0A025BF5BAA7E6E6 /* icon_search.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_search.png; path = pod/assets/icon/icon_search.png; sourceTree = "<group>"; };
+		30263A6D9598AAA1BD2C42364CB5565C /* Pods-DDKitSwift_NetCheck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDKitSwift_NetCheck-dummy.m"; sourceTree = "<group>"; };
+		32A73FFAA28202A77051AAAC4824C5DC /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3342C1B8A826C0408BE329387CA86C03 /* icon_back.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_back.png; path = pod/assets/icon/icon_back.png; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3C2104DC0603C9368BC8B9CEADFBA044 /* Pods-DDNetCheck-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDNetCheck-Info.plist"; sourceTree = "<group>"; };
-		4A792292A27BFFA477B8F9A88E04C9B6 /* Pods-DDNetCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDNetCheck.release.xcconfig"; sourceTree = "<group>"; };
-		51FCB85C4ECB6D2A0983EF1F5F42E2B4 /* Pods-DDNetCheck-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDNetCheck-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57124F044BE3F0B9637575803D0474BF /* Pods-DDNetCheck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDNetCheck.modulemap"; sourceTree = "<group>"; };
-		60308833F30CAD3753F78553207AB458 /* DDPingTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDPingTools.debug.xcconfig; sourceTree = "<group>"; };
-		722D3B75E25CFD3A9716CBE95142DB8F /* SimplePing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = pod/SimplePing.h; sourceTree = "<group>"; };
-		87562ABBDC8C2F16ED0EE9BE0E896465 /* DDPingTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDPingTools.modulemap; sourceTree = "<group>"; };
-		8C6BA73E5DEAD68AFF692FE68BA5820F /* DDPingTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDPingTools-umbrella.h"; sourceTree = "<group>"; };
-		8C835FAA76AE439472FEE61B846E5523 /* SimplePing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = pod/SimplePing.m; sourceTree = "<group>"; };
-		8CE6ABFB07EC36A4A12978C40F171EB3 /* DDPingNetworkActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPingNetworkActivityIndicator.swift; path = pod/DDPingNetworkActivityIndicator.swift; sourceTree = "<group>"; };
+		38B99EDFE821142E4FEA47F92685E805 /* Pods-DDKitSwift_NetCheck */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDKitSwift_NetCheck"; path = Pods_DDKitSwift_NetCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C34950C7BA0E0A01BCB08E45D5501E4 /* DDNetCheck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDNetCheck-umbrella.h"; sourceTree = "<group>"; };
+		4178029AA688D62799A25AF323C61DBE /* log_icon_scale.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_scale.png; path = pod/assets/icon/log_icon_scale.png; sourceTree = "<group>"; };
+		42DCDF297C28E1C1863211D0D51DD6F2 /* icon_copy.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_copy.png; path = pod/assets/icon/icon_copy.png; sourceTree = "<group>"; };
+		45A4387D79745BB96119A9BFE7E2A3AA /* ipv6.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ipv6.png; path = Pods/assets/icon/ipv6.png; sourceTree = "<group>"; };
+		4681057DFA221A27557750BCA8FC3F5B /* Pods-DDKitSwift_NetCheck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDKitSwift_NetCheck-umbrella.h"; sourceTree = "<group>"; };
+		4771F977D0CDCC92B0CF8ED3FFA1B8D1 /* icon_scale.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_scale.png; path = pod/assets/icon/icon_scale.png; sourceTree = "<group>"; };
+		48C6935EA6ADA123EE28BAAF6875986E /* DDPingNetworkActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPingNetworkActivityIndicator.swift; path = pod/DDPingNetworkActivityIndicator.swift; sourceTree = "<group>"; };
+		4AD2D768851410FA190998A970D1E80A /* DDNetCheck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDNetCheck-dummy.m"; sourceTree = "<group>"; };
+		4B30E9EC79664804D415525DD19A80D0 /* ipv4.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ipv4.png; path = Pods/assets/icon/ipv4.png; sourceTree = "<group>"; };
+		4B78A31F02C16ABE09DD419C3732AD59 /* icon_hide.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_hide.png; path = pod/assets/icon/icon_hide.png; sourceTree = "<group>"; };
+		4E16FD48F7ACA520B29D22B080EC3810 /* notAvailable.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = notAvailable.png; path = Pods/assets/icon/notAvailable.png; sourceTree = "<group>"; };
+		4F728DFE22330460B2598D763EEDA764 /* CircleMenuMaskView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuMaskView.swift; path = pod/menu/CircleMenuMaskView.swift; sourceTree = "<group>"; };
+		4FC02DC9C277FB40CB62284BA71488CE /* wifi.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = wifi.png; path = Pods/assets/icon/wifi.png; sourceTree = "<group>"; };
+		5383DB0D4054FA5777D4EC0523153B8F /* DDLoggerSwift+ddkit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDLoggerSwift+ddkit.swift"; path = "pod/extend/DDLoggerSwift+ddkit.swift"; sourceTree = "<group>"; };
+		552BDE304866370B480920B0770E4086 /* DDLoggerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDLoggerSwift-umbrella.h"; sourceTree = "<group>"; };
+		556056120BA4465F86E771E582EE4276 /* DDNetCheckTableViewTestCellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckTableViewTestCellModel.swift; path = Pods/model/DDNetCheckTableViewTestCellModel.swift; sourceTree = "<group>"; };
+		5669EE3D376CFFA018254F17F43917A4 /* DDUtils+file.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDUtils+file.swift"; path = "Sources/core/utils/DDUtils+file.swift"; sourceTree = "<group>"; };
+		576FC8D434EB762ACFA413589EBDA244 /* SimplePing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = pod/SimplePing.h; sourceTree = "<group>"; };
+		58181C362328B0C0B444E41E55D57E59 /* DDNetCheckStatusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckStatusView.swift; path = Pods/view/DDNetCheckStatusView.swift; sourceTree = "<group>"; };
+		58C05B0D14F8CEA1422F1D17ADDFFC03 /* DDUtilsNameSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDUtilsNameSpace.swift; path = Sources/core/core/DDUtilsNameSpace.swift; sourceTree = "<group>"; };
+		5A4C7FD6B26F0B145CA27BCFEDBF42AE /* DDPingTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDPingTools.release.xcconfig; sourceTree = "<group>"; };
+		5C56F7FF94F881C2CC396FB752E3413C /* Pods-DDKitSwift_NetCheck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDKitSwift_NetCheck.modulemap"; sourceTree = "<group>"; };
+		5E0EF652E19009EB5ACC8C9567FCB64E /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5EDFAD942BA9EAA24EF762D6DFA6CE9C /* DDPingTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDPingTools.modulemap; sourceTree = "<group>"; };
+		6117C17BCCB4736D77B0C94268F9A5B7 /* icon_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_close@3x.png"; path = "pod/assets/icon/icon_close@3x.png"; sourceTree = "<group>"; };
+		63934461398A9CC501E0AC6BBF238FFE /* icon_analyse.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_analyse.png; path = pod/assets/icon/icon_analyse.png; sourceTree = "<group>"; };
+		67832819087A20EE754DB49E95EE7861 /* DDKitSwift-DDKitSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DDKitSwift-DDKitSwift"; path = DDKitSwift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		692DAFCCC0FF49517CC6CF99901C4300 /* SimplePing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = pod/SimplePing.m; sourceTree = "<group>"; };
+		6B28ACDF8BA48FF1A61D5CFABBB97AFE /* DDLoggerSwiftItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftItem.swift; path = pod/model/DDLoggerSwiftItem.swift; sourceTree = "<group>"; };
+		6BF751306E22FF1980F45F746B84CFE0 /* DDKitSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDKitSwift-prefix.pch"; sourceTree = "<group>"; };
+		6D753B16C17A99B36D7ED50F9DCD9651 /* icon_notice@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_notice@3x.png"; path = "pod/assets/icon/icon_notice@3x.png"; sourceTree = "<group>"; };
+		6EA95C73CB26C897DD8647B74375C0C5 /* DDUtils+system.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDUtils+system.swift"; path = "Sources/core/utils/DDUtils+system.swift"; sourceTree = "<group>"; };
+		6EE26D836377CA863AAAF9260E9EA901 /* DDLoggerSwift-DDLoggerSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DDLoggerSwift-DDLoggerSwift"; path = DDLoggerSwift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF2898522BAD2F59CD78F5C4A01D708 /* DDKitSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDKitSwift.release.xcconfig; sourceTree = "<group>"; };
+		6F88E13A1FAA4128254A508C43896E27 /* DDLoggerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDLoggerSwift-Info.plist"; sourceTree = "<group>"; };
+		75A4A6A48702399913ABECADE07883B0 /* String+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+zx.swift"; path = "Sources/core/utils/String+zx.swift"; sourceTree = "<group>"; };
+		76FDCDB42BBAE47C0FF15FCC6E011114 /* DDNetCheckTableViewPlatformCellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckTableViewPlatformCellModel.swift; path = Pods/model/DDNetCheckTableViewPlatformCellModel.swift; sourceTree = "<group>"; };
+		7717BE4DC647F4B6488B15BE2E14E4E6 /* icon_share.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_share.png; path = pod/assets/icon/icon_share.png; sourceTree = "<group>"; };
+		78FD62BEA27F732D10338162C7F1426C /* icon-success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-success.png"; path = "Pods/assets/icon/icon-success.png"; sourceTree = "<group>"; };
+		7A738E84D61E9EBC88EFB0DD831E32C2 /* icon */ = {isa = PBXFileReference; includeInIndex = 1; name = icon; path = Pods/assets/icon; sourceTree = "<group>"; };
+		7AFBA925D16F4F81D6B0401346A01213 /* DDNetCheck-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDNetCheck-prefix.pch"; sourceTree = "<group>"; };
+		7C9BD245E5C920947BD9D36A175C2085 /* Pods-DDKitSwift_NetCheck-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDKitSwift_NetCheck-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EDC4686A8EBBC1AB91260BE4946613E /* ResourceBundle-DDKitSwift-DDKitSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DDKitSwift-DDKitSwift-Info.plist"; sourceTree = "<group>"; };
+		80F6EB3A77343C350EA7526D8D363EF2 /* LogContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogContent.swift; path = pod/LogContent.swift; sourceTree = "<group>"; };
+		81D0EF2F15E84C42829F1533D8AB5520 /* DDLoggerSwiftWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftWindow.swift; path = pod/DDLoggerSwiftWindow.swift; sourceTree = "<group>"; };
+		87534E1972BF72841083EDD526B7A1F5 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		894946D01E5E4A696733B6A26AD47D4F /* DDLoggerSwiftFilterTypeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftFilterTypeView.swift; path = pod/view/DDLoggerSwiftFilterTypeView.swift; sourceTree = "<group>"; };
+		8B4E418DE3A63341AF759F74556C31F2 /* DDPingTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDPingTools-Info.plist"; sourceTree = "<group>"; };
+		8CE6C121B699E064252339BB0D3C759C /* DDKitSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDKitSwift-dummy.m"; sourceTree = "<group>"; };
+		900D3D258AFBA250A1A4B9227D5127E8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		93B5D214CDEDB902898E9BA029AE697D /* icon */ = {isa = PBXFileReference; includeInIndex = 1; name = icon; path = pod/assets/icon; sourceTree = "<group>"; };
+		93B5EB6B180AAB2B987BC5F64B398AD6 /* Pods-DDKitSwift_NetCheck-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDKitSwift_NetCheck-Info.plist"; sourceTree = "<group>"; };
+		9540ED93C47BD7DF9BF3AA0ACA03D186 /* DDNetCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheck.swift; path = Pods/DDNetCheck.swift; sourceTree = "<group>"; };
+		9786C3F8F3C3E0B4D955F47140A2EE4C /* localizable */ = {isa = PBXFileReference; includeInIndex = 1; name = localizable; path = Pods/assets/localizable; sourceTree = "<group>"; };
+		9874310B149AE3A914D35FD5EE5186D0 /* dns.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dns.png; path = Pods/assets/icon/dns.png; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2D4D8E05B89476F7314B5848F3E965D /* Pods-DDNetCheck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDNetCheck-umbrella.h"; sourceTree = "<group>"; };
+		9EFCE1A3BF5BC182DEDAD4C69515F21D /* DDLoggerSwiftTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftTableViewCell.swift; path = pod/view/DDLoggerSwiftTableViewCell.swift; sourceTree = "<group>"; };
+		A13780BD5170EDAEB9F42A072080EAA9 /* icon_normal_back.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_normal_back.png; path = pod/assets/icon/icon_normal_back.png; sourceTree = "<group>"; };
+		A17B4FF48411B2ECFE00E23FE45DC058 /* DDUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDUtils.debug.xcconfig; sourceTree = "<group>"; };
+		A196DC12078A72063910146108D56955 /* Pods-DDKitSwift_NetCheck-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDKitSwift_NetCheck-frameworks.sh"; sourceTree = "<group>"; };
+		A1FF724D2D6EFD35ADBDA38BBCE91CEB /* isConnected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = isConnected.png; path = Pods/assets/icon/isConnected.png; sourceTree = "<group>"; };
+		A2D6C4CCB0A24396C86DAD0E32987FC1 /* icon-failed.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon-failed.png"; path = "Pods/assets/icon/icon-failed.png"; sourceTree = "<group>"; };
+		A4CABB38C140C3105E659DE4165B8061 /* UIColor+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+zx.swift"; path = "Sources/core/ui/UIColor+zx.swift"; sourceTree = "<group>"; };
 		A4F9A4A5179F8CCFC37A63CAF3F7768C /* DDPingTools */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDPingTools; path = DDPingTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD3FC88E479708F8E9B852AF7ECEEE29 /* DDPingTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDPingTools-dummy.m"; sourceTree = "<group>"; };
-		B36A8A70FA59262E1C2796C44F5761D1 /* DDPingTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDPingTools-Info.plist"; sourceTree = "<group>"; };
-		CFEF1CFB669E4B43D551DF03938268EF /* DDPingTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDPingTools-prefix.pch"; sourceTree = "<group>"; };
-		D01020BD846CE4D558AD5CC18FCD7D92 /* Pods-DDNetCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDNetCheck.debug.xcconfig"; sourceTree = "<group>"; };
-		EF04C192CA152B76E5FBC6C43F666767 /* Pods-DDNetCheck-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDNetCheck-frameworks.sh"; sourceTree = "<group>"; };
-		F82E22ECA10F8F964D143BCF550130B9 /* Pods-DDNetCheck-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDNetCheck-acknowledgements.plist"; sourceTree = "<group>"; };
-		FDEA85AF9F97EC731CD370A7ECC692C1 /* DDPingTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDPingTools.release.xcconfig; sourceTree = "<group>"; };
+		A662AA93F65F026CEAE95B259E357B97 /* DDKitSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDKitSwift; path = DDKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F248A4CC469D9D1ADCBBB1D87A8DEF /* DDLoggerSwiftTableCellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftTableCellModel.swift; path = pod/model/DDLoggerSwiftTableCellModel.swift; sourceTree = "<group>"; };
+		AD76DFDB9755B7872B3A626C61108F43 /* DDKitSwiftWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwiftWindow.swift; path = pod/DDKitSwiftWindow.swift; sourceTree = "<group>"; };
+		AE255513E542A7635AA924C36C07E511 /* DDUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDUtils; path = DDUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6BE8DE31DBD90A9EECFABA87BB7330 /* HDSqliteTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HDSqliteTools.swift; path = pod/HDSqliteTools.swift; sourceTree = "<group>"; };
+		AED521DE32E18F4567D3731017C47EBE /* icon_delete.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_delete.png; path = pod/assets/icon/icon_delete.png; sourceTree = "<group>"; };
+		AF308CA96F7876DA46E28D5663C411C6 /* DDLoggerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDLoggerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		B09E8701B88BD2192D3E4B554B79A8FB /* icon_decrypt.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_decrypt.png; path = pod/assets/icon/icon_decrypt.png; sourceTree = "<group>"; };
+		B2C7192A52AA30D6F01E795DD90F31D5 /* DDLoggerSwiftMenuCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftMenuCollectionViewCell.swift; path = pod/view/DDLoggerSwiftMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		B345E355F8AAC2CA612550D969BA3A70 /* logger_logo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "logger_logo@3x.png"; path = "pod/assets/icon/logger_logo@3x.png"; sourceTree = "<group>"; };
+		B4A267061EBDA10F49E1246100535A0A /* DDUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDUtils.release.xcconfig; sourceTree = "<group>"; };
+		B4D705C6E9EE7AB2356625CF18491054 /* UIView+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+zx.swift"; path = "Sources/core/ui/UIView+zx.swift"; sourceTree = "<group>"; };
+		B554FA304F8E72188AB9364C3B132C83 /* DDLoggerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDLoggerSwift-prefix.pch"; sourceTree = "<group>"; };
+		B6CDC7D375837D9D77A3534F10A8662F /* DDKitSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDKitSwift.modulemap; sourceTree = "<group>"; };
+		B708B60DA5CA3A02CDFDE99FECC301CA /* DDUtils+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDUtils+UI.swift"; path = "Sources/core/ui/DDUtils+UI.swift"; sourceTree = "<group>"; };
+		B9AA08894FA4D51CACF1F01E78BC394D /* Date+zx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+zx.swift"; path = "Sources/core/utils/Date+zx.swift"; sourceTree = "<group>"; };
+		BB77AE267ACC12FB5DE7486E44FDEAD6 /* DDKitSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDKitSwift.debug.xcconfig; sourceTree = "<group>"; };
+		BC36420B9672FD709EE9FB53CC0002EE /* appleServerConnected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = appleServerConnected.png; path = Pods/assets/icon/appleServerConnected.png; sourceTree = "<group>"; };
+		C12F8AB7E7CBAEE0646484AF5A1DAF1E /* DDKitSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDKitSwift-umbrella.h"; sourceTree = "<group>"; };
+		C182C81C87FC9191546315872B325CC0 /* log_icon_close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_close.png; path = pod/assets/icon/log_icon_close.png; sourceTree = "<group>"; };
+		C68CD319A95D31418086FFE521ECB6CD /* DDUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDUtils-Info.plist"; sourceTree = "<group>"; };
+		C77F8427E25F9B0EFFFD226056F18F3D /* DDLoggerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDLoggerSwift.modulemap; sourceTree = "<group>"; };
+		C90B41B465C479821D2947C1B100A329 /* DDLoggerSwiftMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftMenuView.swift; path = pod/view/DDLoggerSwiftMenuView.swift; sourceTree = "<group>"; };
+		C924D48A8F13F9A563DFDE20471DE151 /* zx_logo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zx_logo@3x.png"; path = "pod/assets/icon/zx_logo@3x.png"; sourceTree = "<group>"; };
+		CCAAAE4671E8191EF406BA0BF0037797 /* DDUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDUtils-umbrella.h"; sourceTree = "<group>"; };
+		CCCB7A4F8EDB94C19B81DB6C5F91E2C7 /* DDLoggerSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDLoggerSwift; path = DDLoggerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE782DBAF02570EDDD8C656EAC0A5E7 /* DDUtils+media.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DDUtils+media.swift"; path = "Sources/core/utils/DDUtils+media.swift"; sourceTree = "<group>"; };
+		CDF76B5212E136613FB75A6FCCC6C7D3 /* localizable */ = {isa = PBXFileReference; includeInIndex = 1; name = localizable; path = pod/assets/localizable; sourceTree = "<group>"; };
+		CE31CB65E69A7102A42BFDCCD35779D9 /* DDUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDUtils-dummy.m"; sourceTree = "<group>"; };
+		CF72FEC13AA8B5F0E66A274996E55200 /* DDPingTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDPingTools.h; path = pod/DDPingTools.h; sourceTree = "<group>"; };
+		CFE615E01A4D598DD85F9D8078DB1DBD /* DDKitSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDKitSwift-Info.plist"; sourceTree = "<group>"; };
+		D2E6300DBA499B1FD0E937E0EDEBC86F /* DDLoggerSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwift.swift; path = pod/DDLoggerSwift.swift; sourceTree = "<group>"; };
+		D38C2166E0E03E0A9E6E4FAD9D2D05CF /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = pod/menu/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
+		D4CBC9A0BB2154E92D249A8F8BB026D0 /* icon */ = {isa = PBXFileReference; includeInIndex = 1; name = icon; path = pod/assets/icon; sourceTree = "<group>"; };
+		D7CDFE35001EE62E3DD4B1765C684887 /* localizable */ = {isa = PBXFileReference; includeInIndex = 1; name = localizable; path = pod/assets/localizable; sourceTree = "<group>"; };
+		DBBE0BD2378F268AE06D51EF23F70EA8 /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = pod/menu/CircleMenu.swift; sourceTree = "<group>"; };
+		DD1257DBC4390A97B15A30A782E5B93C /* ResourceBundle-DDNetCheck-DDNetCheck-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DDNetCheck-DDNetCheck-Info.plist"; sourceTree = "<group>"; };
+		E0AB9B7C3025BBCAD620D91A6F3E3902 /* DDPingTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDPingTools-dummy.m"; sourceTree = "<group>"; };
+		E2C4F1BC6B0D63660B6C31C25E8FE53D /* log_icon_subtract.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_subtract.png; path = pod/assets/icon/log_icon_subtract.png; sourceTree = "<group>"; };
+		E7D618657B2443D896AC6E61531A6E7A /* DDNetCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDNetCheck.release.xcconfig; sourceTree = "<group>"; };
+		E96357A760A17937CE3425CCB1E054C9 /* DDPingTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDPingTools-prefix.pch"; sourceTree = "<group>"; };
+		EA3900855E333939FE8CB30B95BA2C42 /* DDNetCheckTableViewCellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDNetCheckTableViewCellModel.swift; path = Pods/model/DDNetCheckTableViewCellModel.swift; sourceTree = "<group>"; };
+		EC35CB458C6C81554554B2D918BA15F7 /* icon_search@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_search@3x.png"; path = "pod/assets/icon/icon_search@3x.png"; sourceTree = "<group>"; };
+		ECEC5258747408A7896392DFE126D239 /* icon_exit.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_exit.png; path = pod/assets/icon/icon_exit.png; sourceTree = "<group>"; };
+		ECF3D7E4840B3065300F81EFFC4D1657 /* DDLoggerSwiftFloatWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDLoggerSwiftFloatWindow.swift; path = pod/DDLoggerSwiftFloatWindow.swift; sourceTree = "<group>"; };
+		EFC2DD1C4CD151BEC83C0B936F6C5285 /* DDNetCheck-DDNetCheck */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DDNetCheck-DDNetCheck"; path = DDNetCheck.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0568356F2099842238C08CD276B4FFC /* vpn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = vpn.png; path = Pods/assets/icon/vpn.png; sourceTree = "<group>"; };
+		F06D6C98506A624761CAA68E440149E1 /* Pods-DDKitSwift_NetCheck-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDKitSwift_NetCheck-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F5F0B176C42933FAC528A667248AC924 /* icon_share@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_share@3x.png"; path = "pod/assets/icon/icon_share@3x.png"; sourceTree = "<group>"; };
+		F61F4045F048BBC224BAE0880E5AD85A /* Pods-DDKitSwift_NetCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDKitSwift_NetCheck.release.xcconfig"; sourceTree = "<group>"; };
+		F90E4EA0DF99CEA77794070AA43F67D7 /* DDKitSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDKitSwift.swift; path = pod/DDKitSwift.swift; sourceTree = "<group>"; };
+		FCCF8F04A31D499889932D6DB8D11C1A /* log_icon_scale.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = log_icon_scale.png; path = pod/assets/icon/log_icon_scale.png; sourceTree = "<group>"; };
+		FEE7BC0A711EE82B16F5AF2743B85BD5 /* DDLoggerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDLoggerSwift-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7464C8E741FF6E7601A7CB745ED1ECE1 /* Frameworks */ = {
+		3AB4495F3437AD1ECB666658F9A85A8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23EDAAB4535386C2118F52E932BF244 /* Foundation.framework in Frameworks */,
+				6B1B26DFC2F5E4D689AF6646FDE6D3AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAA782E13C3540701B476FCF498DD2EF /* Frameworks */ = {
+		47696C5465443ABB5813E68B19DB48D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF64F19E42947CA39DD6ED7057C1355 /* Foundation.framework in Frameworks */,
+				B0A5D12F018EACA3B512D61D9325B1DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7277B64831447D9AC8713D9C5FA84BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DCA0AF4CD076FC2CAB17431B9C000B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		771777BFE6DA6D7026D7717D1E4DAAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862FEFA241B0F84D2D73CCECDD07E936 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B60BE3E7A3568158DAF7FDFFD3351C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FC9F2D733B31F2D7829F16F637983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A703727DDFB0F46416817AC2581D8184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04418E32C7844740988EE40B636A4D76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9449305C4D026530F2E51AB60136AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCD8C81AA9FD1153E3683DD0DA342E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C982DBA9F6DF6D6A2566453D52C8AF54 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0036F130D9CFA21067E65D996B271768 /* Support Files */ = {
+		05F023C1C52F91B4ABF0B1470DAF7C14 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				87562ABBDC8C2F16ED0EE9BE0E896465 /* DDPingTools.modulemap */,
-				AD3FC88E479708F8E9B852AF7ECEEE29 /* DDPingTools-dummy.m */,
-				B36A8A70FA59262E1C2796C44F5761D1 /* DDPingTools-Info.plist */,
-				CFEF1CFB669E4B43D551DF03938268EF /* DDPingTools-prefix.pch */,
-				8C6BA73E5DEAD68AFF692FE68BA5820F /* DDPingTools-umbrella.h */,
-				60308833F30CAD3753F78553207AB458 /* DDPingTools.debug.xcconfig */,
-				FDEA85AF9F97EC731CD370A7ECC692C1 /* DDPingTools.release.xcconfig */,
+				DBBE0BD2378F268AE06D51EF23F70EA8 /* CircleMenu.swift */,
+				D38C2166E0E03E0A9E6E4FAD9D2D05CF /* CircleMenuButton.swift */,
+				0920C86634AE6AD463DE5DA7E8524AF8 /* CircleMenuLoader.swift */,
+				4F728DFE22330460B2598D763EEDA764 /* CircleMenuMaskView.swift */,
+				F90E4EA0DF99CEA77794070AA43F67D7 /* DDKitSwift.swift */,
+				0C020022780A9AD2005BFA36CCC534AA /* DDKitSwiftCollectionViewHeaderView.swift */,
+				0C3ACA12CD11C84F66493CBE6E5386EF /* DDKitSwiftFloatWindow.swift */,
+				1CFDB897322518B6212F37C8DB266660 /* DDKitSwiftPluginCollectionViewCell.swift */,
+				0F40A7B689395353A059AF7C1845DDF8 /* DDKitSwiftPluginProtocol.swift */,
+				2CDCCCF32DA105D836BB35AC863ACFB8 /* DDKitSwiftUIConfig.swift */,
+				AD76DFDB9755B7872B3A626C61108F43 /* DDKitSwiftWindow.swift */,
+				5383DB0D4054FA5777D4EC0523153B8F /* DDLoggerSwift+ddkit.swift */,
+				6A2186D664BC26364E8C6992AFFC35ED /* Resources */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		158A4F42BDE9394ED72D4AE87E37D6EC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA0F7B23B48D869A144DCE346D2E910 /* Pods-DDKitSwift_NetCheck */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1FD1541973B9E490875EF1D8E3D18402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42C8BCDBF46AC7E879A590443135E971 /* DDKitSwift */,
+				D4DAA24F7AFBEC09830577BF6DFEDF2D /* DDLoggerSwift */,
+				81F76B4DBEE95109DC425E33197FB622 /* DDNetCheck */,
+				7FE7C924A4FE735EA76595EC9193692B /* DDPingTools */,
+				5C1CDB96349B214FECA5ECDFF41588C2 /* DDUtils */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A6B8D41A5A4BBCC144A45EB8CEC9939 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4CBC9A0BB2154E92D249A8F8BB026D0 /* icon */,
+				63934461398A9CC501E0AC6BBF238FFE /* icon_analyse.png */,
+				3342C1B8A826C0408BE329387CA86C03 /* icon_back.png */,
+				42DCDF297C28E1C1863211D0D51DD6F2 /* icon_copy.png */,
+				B09E8701B88BD2192D3E4B554B79A8FB /* icon_decrypt.png */,
+				AED521DE32E18F4567D3731017C47EBE /* icon_delete.png */,
+				ECEC5258747408A7896392DFE126D239 /* icon_exit.png */,
+				4B78A31F02C16ABE09DD419C3732AD59 /* icon_hide.png */,
+				A13780BD5170EDAEB9F42A072080EAA9 /* icon_normal_back.png */,
+				4771F977D0CDCC92B0CF8ED3FFA1B8D1 /* icon_scale.png */,
+				2BF30DAC55CDF1F5AE548012CCB14A1E /* icon_scroll.png */,
+				2F2F526BF3A2BC5E0A025BF5BAA7E6E6 /* icon_search.png */,
+				7717BE4DC647F4B6488B15BE2E14E4E6 /* icon_share.png */,
+				2490F79156CAB0288D6CE454239356DD /* icon_upload.png */,
+				CDF76B5212E136613FB75A6FCCC6C7D3 /* localizable */,
+				D7855D068956BF646D92964DC85D61EA /* Localizable.strings */,
+				C182C81C87FC9191546315872B325CC0 /* log_icon_close.png */,
+				FCCF8F04A31D499889932D6DB8D11C1A /* log_icon_scale.png */,
+				E2C4F1BC6B0D63660B6C31C25E8FE53D /* log_icon_subtract.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A8CE3334021C417D40C19A1D7086D1B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				D2E6300DBA499B1FD0E937E0EDEBC86F /* DDLoggerSwift.swift */,
+				894946D01E5E4A696733B6A26AD47D4F /* DDLoggerSwiftFilterTypeView.swift */,
+				ECF3D7E4840B3065300F81EFFC4D1657 /* DDLoggerSwiftFloatWindow.swift */,
+				6B28ACDF8BA48FF1A61D5CFABBB97AFE /* DDLoggerSwiftItem.swift */,
+				B2C7192A52AA30D6F01E795DD90F31D5 /* DDLoggerSwiftMenuCollectionViewCell.swift */,
+				C90B41B465C479821D2947C1B100A329 /* DDLoggerSwiftMenuView.swift */,
+				2D271EF38B52F592C56B3455AE594742 /* DDLoggerSwiftPickerWindow.swift */,
+				A6F248A4CC469D9D1ADCBBB1D87A8DEF /* DDLoggerSwiftTableCellModel.swift */,
+				9EFCE1A3BF5BC182DEDAD4C69515F21D /* DDLoggerSwiftTableViewCell.swift */,
+				81D0EF2F15E84C42829F1533D8AB5520 /* DDLoggerSwiftWindow.swift */,
+				AE6BE8DE31DBD90A9EECFABA87BB7330 /* HDSqliteTools.swift */,
+				80F6EB3A77343C350EA7526D8D363EF2 /* LogContent.swift */,
+				2A6B8D41A5A4BBCC144A45EB8CEC9939 /* Resources */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		2ED7482BE195BCE8A8D57C989EE32A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A662AA93F65F026CEAE95B259E357B97 /* DDKitSwift */,
+				67832819087A20EE754DB49E95EE7861 /* DDKitSwift-DDKitSwift */,
+				CCCB7A4F8EDB94C19B81DB6C5F91E2C7 /* DDLoggerSwift */,
+				6EE26D836377CA863AAAF9260E9EA901 /* DDLoggerSwift-DDLoggerSwift */,
+				27A87C460ADDB1D6C1B2971BD7C28B91 /* DDNetCheck */,
+				EFC2DD1C4CD151BEC83C0B936F6C5285 /* DDNetCheck-DDNetCheck */,
+				A4F9A4A5179F8CCFC37A63CAF3F7768C /* DDPingTools */,
+				AE255513E542A7635AA924C36C07E511 /* DDUtils */,
+				38B99EDFE821142E4FEA47F92685E805 /* Pods-DDKitSwift_NetCheck */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340B80D367A684A75E7EE551C7A88D41 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B57D48530EAD0690F78C6682BD3E302 /* DDNetCheck.modulemap */,
+				4AD2D768851410FA190998A970D1E80A /* DDNetCheck-dummy.m */,
+				1289E256FDECE47A237C0C7355A81189 /* DDNetCheck-Info.plist */,
+				7AFBA925D16F4F81D6B0401346A01213 /* DDNetCheck-prefix.pch */,
+				3C34950C7BA0E0A01BCB08E45D5501E4 /* DDNetCheck-umbrella.h */,
+				1EB7049808B811240F761A3D112D415B /* DDNetCheck.debug.xcconfig */,
+				E7D618657B2443D896AC6E61531A6E7A /* DDNetCheck.release.xcconfig */,
+				DD1257DBC4390A97B15A30A782E5B93C /* ResourceBundle-DDNetCheck-DDNetCheck-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDNetCheck";
+			sourceTree = "<group>";
+		};
+		3A8AD532623B8171FD0ABF7C1DECBC84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77F8427E25F9B0EFFFD226056F18F3D /* DDLoggerSwift.modulemap */,
+				FEE7BC0A711EE82B16F5AF2743B85BD5 /* DDLoggerSwift-dummy.m */,
+				6F88E13A1FAA4128254A508C43896E27 /* DDLoggerSwift-Info.plist */,
+				B554FA304F8E72188AB9364C3B132C83 /* DDLoggerSwift-prefix.pch */,
+				552BDE304866370B480920B0770E4086 /* DDLoggerSwift-umbrella.h */,
+				AF308CA96F7876DA46E28D5663C411C6 /* DDLoggerSwift.debug.xcconfig */,
+				2C0851D12BB2B9EC4078456479687807 /* DDLoggerSwift.release.xcconfig */,
+				11A759752C23B7D6EECE68CFD0EE93D3 /* ResourceBundle-DDLoggerSwift-DDLoggerSwift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDLoggerSwift";
+			sourceTree = "<group>";
+		};
+		42C8BCDBF46AC7E879A590443135E971 /* DDKitSwift */ = {
+			isa = PBXGroup;
+			children = (
+				05F023C1C52F91B4ABF0B1470DAF7C14 /* core */,
+				6584DB89AA160FE8B065C83607758009 /* Support Files */,
+			);
+			name = DDKitSwift;
+			path = DDKitSwift;
+			sourceTree = "<group>";
+		};
+		5C1CDB96349B214FECA5ECDFF41588C2 /* DDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				760A38391D2F29AF031E1D1B5E3896F7 /* core */,
+				77DB0012C7F94B19F70C109E96478567 /* Support Files */,
+				FDECADF3CA012170E7DC75DFBB66EECD /* ui */,
+				74202E41608C6F84D28E6619869F58F2 /* utils */,
+			);
+			name = DDUtils;
+			path = DDUtils;
+			sourceTree = "<group>";
+		};
+		5D8E49DB008F85B54616E676F581BE29 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				48C6935EA6ADA123EE28BAAF6875986E /* DDPingNetworkActivityIndicator.swift */,
+				CF72FEC13AA8B5F0E66A274996E55200 /* DDPingTools.h */,
+				2043F9292692EAAFE7E199D9CFABF8A2 /* DDPingTools.swift */,
+				576FC8D434EB762ACFA413589EBDA244 /* SimplePing.h */,
+				692DAFCCC0FF49517CC6CF99901C4300 /* SimplePing.m */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		6584DB89AA160FE8B065C83607758009 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDC7D375837D9D77A3534F10A8662F /* DDKitSwift.modulemap */,
+				8CE6C121B699E064252339BB0D3C759C /* DDKitSwift-dummy.m */,
+				CFE615E01A4D598DD85F9D8078DB1DBD /* DDKitSwift-Info.plist */,
+				6BF751306E22FF1980F45F746B84CFE0 /* DDKitSwift-prefix.pch */,
+				C12F8AB7E7CBAEE0646484AF5A1DAF1E /* DDKitSwift-umbrella.h */,
+				BB77AE267ACC12FB5DE7486E44FDEAD6 /* DDKitSwift.debug.xcconfig */,
+				6EF2898522BAD2F59CD78F5C4A01D708 /* DDKitSwift.release.xcconfig */,
+				7EDC4686A8EBBC1AB91260BE4946613E /* ResourceBundle-DDKitSwift-DDKitSwift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDKitSwift";
+			sourceTree = "<group>";
+		};
+		6A2186D664BC26364E8C6992AFFC35ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93B5D214CDEDB902898E9BA029AE697D /* icon */,
+				6117C17BCCB4736D77B0C94268F9A5B7 /* icon_close@3x.png */,
+				20CC32309B6C1C28E629D8CE94C9B26C /* icon_home@3x.png */,
+				28F9D913A11382B7F21FF244FC1915E2 /* icon_list@3x.png */,
+				6D753B16C17A99B36D7ED50F9DCD9651 /* icon_notice@3x.png */,
+				EC35CB458C6C81554554B2D918BA15F7 /* icon_search@3x.png */,
+				067837C2EE9737587F8090C4A07656AB /* icon_setting@3x.png */,
+				F5F0B176C42933FAC528A667248AC924 /* icon_share@3x.png */,
+				D7CDFE35001EE62E3DD4B1765C684887 /* localizable */,
+				BCBEAE335AA31A77580427911F1DFC33 /* Localizable.strings */,
+				051BCAB11D374FC287F11138F58E0717 /* log_icon_close.png */,
+				4178029AA688D62799A25AF323C61DBE /* log_icon_scale.png */,
+				05F1E032E10BEF31D7F6658C408888F9 /* log_icon_subtract.png */,
+				B345E355F8AAC2CA612550D969BA3A70 /* logger_logo@3x.png */,
+				C924D48A8F13F9A563DFDE20471DE151 /* zx_logo@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		74202E41608C6F84D28E6619869F58F2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				022162621DF9669C5B5DB0D811E94D8A /* Data+zx.swift */,
+				B9AA08894FA4D51CACF1F01E78BC394D /* Date+zx.swift */,
+				5669EE3D376CFFA018254F17F43917A4 /* DDUtils+file.swift */,
+				CCE782DBAF02570EDDD8C656EAC0A5E7 /* DDUtils+media.swift */,
+				6EA95C73CB26C897DD8647B74375C0C5 /* DDUtils+system.swift */,
+				75A4A6A48702399913ABECADE07883B0 /* String+zx.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		760A38391D2F29AF031E1D1B5E3896F7 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				18990AC7168A3964B354A26AEF84B7F9 /* DDUtils.swift */,
+				58C05B0D14F8CEA1422F1D17ADDFFC03 /* DDUtilsNameSpace.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		77DB0012C7F94B19F70C109E96478567 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19EE36916AA8B7D663E9009C4E491030 /* DDUtils.modulemap */,
+				CE31CB65E69A7102A42BFDCCD35779D9 /* DDUtils-dummy.m */,
+				C68CD319A95D31418086FFE521ECB6CD /* DDUtils-Info.plist */,
+				2A187541766C11E2E56BF92E9B4CA20D /* DDUtils-prefix.pch */,
+				CCAAAE4671E8191EF406BA0BF0037797 /* DDUtils-umbrella.h */,
+				A17B4FF48411B2ECFE00E23FE45DC058 /* DDUtils.debug.xcconfig */,
+				B4A267061EBDA10F49E1246100535A0A /* DDUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDUtils";
+			sourceTree = "<group>";
+		};
+		7FE7C924A4FE735EA76595EC9193692B /* DDPingTools */ = {
+			isa = PBXGroup;
+			children = (
+				5D8E49DB008F85B54616E676F581BE29 /* core */,
+				AC98917FC3EFB635BDB3965A8FBE06E5 /* Support Files */,
+			);
+			name = DDPingTools;
+			path = DDPingTools;
+			sourceTree = "<group>";
+		};
+		81F76B4DBEE95109DC425E33197FB622 /* DDNetCheck */ = {
+			isa = PBXGroup;
+			children = (
+				C99530EEF3A5F8D2C24F3D8C881CA14B /* core */,
+				340B80D367A684A75E7EE551C7A88D41 /* Support Files */,
+			);
+			name = DDNetCheck;
+			path = DDNetCheck;
+			sourceTree = "<group>";
+		};
+		83F8F4F5D55304F161DE2090FF7D14DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC36420B9672FD709EE9FB53CC0002EE /* appleServerConnected.png */,
+				267A619BFAD2355E79D038B8A3B8FBFA /* appleServerPing.png */,
+				08C185C7F134B1F56DD540228A4191FC /* cellular.png */,
+				9874310B149AE3A914D35FD5EE5186D0 /* dns.png */,
+				7A738E84D61E9EBC88EFB0DD831E32C2 /* icon */,
+				A2D6C4CCB0A24396C86DAD0E32987FC1 /* icon-failed.png */,
+				78FD62BEA27F732D10338162C7F1426C /* icon-success.png */,
+				4B30E9EC79664804D415525DD19A80D0 /* ipv4.png */,
+				45A4387D79745BB96119A9BFE7E2A3AA /* ipv6.png */,
+				A1FF724D2D6EFD35ADBDA38BBCE91CEB /* isConnected.png */,
+				143BFF77764C746601E29518A615F6E3 /* isConstrained.png */,
+				9786C3F8F3C3E0B4D955F47140A2EE4C /* localizable */,
+				CB0FA819F1611DBECB067BB1552E6457 /* Localizable.strings */,
+				4E16FD48F7ACA520B29D22B080EC3810 /* notAvailable.png */,
+				2ABF9563533A538C21B156099515F454 /* ping.png */,
+				0B03FDFC62B34F9E2ACAA3BBB2505F60 /* proxy.png */,
+				F0568356F2099842238C08CD276B4FFC /* vpn.png */,
+				4FC02DC9C277FB40CB62284BA71488CE /* wifi.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8CA0F7B23B48D869A144DCE346D2E910 /* Pods-DDKitSwift_NetCheck */ = {
+			isa = PBXGroup;
+			children = (
+				5C56F7FF94F881C2CC396FB752E3413C /* Pods-DDKitSwift_NetCheck.modulemap */,
+				F06D6C98506A624761CAA68E440149E1 /* Pods-DDKitSwift_NetCheck-acknowledgements.markdown */,
+				7C9BD245E5C920947BD9D36A175C2085 /* Pods-DDKitSwift_NetCheck-acknowledgements.plist */,
+				30263A6D9598AAA1BD2C42364CB5565C /* Pods-DDKitSwift_NetCheck-dummy.m */,
+				A196DC12078A72063910146108D56955 /* Pods-DDKitSwift_NetCheck-frameworks.sh */,
+				93B5EB6B180AAB2B987BC5F64B398AD6 /* Pods-DDKitSwift_NetCheck-Info.plist */,
+				4681057DFA221A27557750BCA8FC3F5B /* Pods-DDKitSwift_NetCheck-umbrella.h */,
+				05A1A3A3DC189CF91A0E35670D8B9C93 /* Pods-DDKitSwift_NetCheck.debug.xcconfig */,
+				F61F4045F048BBC224BAE0880E5AD85A /* Pods-DDKitSwift_NetCheck.release.xcconfig */,
+			);
+			name = "Pods-DDKitSwift_NetCheck";
+			path = "Target Support Files/Pods-DDKitSwift_NetCheck";
+			sourceTree = "<group>";
+		};
+		AC98917FC3EFB635BDB3965A8FBE06E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EDFAD942BA9EAA24EF762D6DFA6CE9C /* DDPingTools.modulemap */,
+				E0AB9B7C3025BBCAD620D91A6F3E3902 /* DDPingTools-dummy.m */,
+				8B4E418DE3A63341AF759F74556C31F2 /* DDPingTools-Info.plist */,
+				E96357A760A17937CE3425CCB1E054C9 /* DDPingTools-prefix.pch */,
+				2B26DB1407C3A3A1040E0FC7DBF05C41 /* DDPingTools-umbrella.h */,
+				2325EDA752707C24279F84195E767E2F /* DDPingTools.debug.xcconfig */,
+				5A4C7FD6B26F0B145CA27BCFEDBF42AE /* DDPingTools.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DDPingTools";
 			sourceTree = "<group>";
 		};
-		27DA63A523C8977F6B7C43E4E8462D03 /* core */ = {
+		C99530EEF3A5F8D2C24F3D8C881CA14B /* core */ = {
 			isa = PBXGroup;
 			children = (
-				8CE6ABFB07EC36A4A12978C40F171EB3 /* DDPingNetworkActivityIndicator.swift */,
-				2E6AEB0B7023A02580F9241C0235DC3D /* DDPingTools.h */,
-				1F0F19C8244491A6D8FAF1F758D929FF /* DDPingTools.swift */,
-				722D3B75E25CFD3A9716CBE95142DB8F /* SimplePing.h */,
-				8C835FAA76AE439472FEE61B846E5523 /* SimplePing.m */,
+				9540ED93C47BD7DF9BF3AA0ACA03D186 /* DDNetCheck.swift */,
+				58181C362328B0C0B444E41E55D57E59 /* DDNetCheckStatusView.swift */,
+				168B56EAD18BCEF4FCA8376CA79DFD33 /* DDNetCheckTableViewCell.swift */,
+				EA3900855E333939FE8CB30B95BA2C42 /* DDNetCheckTableViewCellModel.swift */,
+				76FDCDB42BBAE47C0FF15FCC6E011114 /* DDNetCheckTableViewPlatformCellModel.swift */,
+				556056120BA4465F86E771E582EE4276 /* DDNetCheckTableViewTestCellModel.swift */,
+				1B82EF47058A97CE41F93EBFA7DD2950 /* DDNetCheckTableViewWebCellModel.swift */,
+				1E6C89C49B3AFC924D4987660F398CB2 /* DDNetCheckVC.swift */,
+				83F8F4F5D55304F161DE2090FF7D14DB /* Resources */,
 			);
 			name = core;
-			sourceTree = "<group>";
-		};
-		27DB72CEEE1D30D719EF8503A4EE1F89 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3DB4BCDAD25B50E2EEFF561EDEBE4FEC /* Pods-DDNetCheck */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3DB4BCDAD25B50E2EEFF561EDEBE4FEC /* Pods-DDNetCheck */ = {
-			isa = PBXGroup;
-			children = (
-				57124F044BE3F0B9637575803D0474BF /* Pods-DDNetCheck.modulemap */,
-				51FCB85C4ECB6D2A0983EF1F5F42E2B4 /* Pods-DDNetCheck-acknowledgements.markdown */,
-				F82E22ECA10F8F964D143BCF550130B9 /* Pods-DDNetCheck-acknowledgements.plist */,
-				0772C5648C0F197746C6476B7EFC2710 /* Pods-DDNetCheck-dummy.m */,
-				EF04C192CA152B76E5FBC6C43F666767 /* Pods-DDNetCheck-frameworks.sh */,
-				3C2104DC0603C9368BC8B9CEADFBA044 /* Pods-DDNetCheck-Info.plist */,
-				A2D4D8E05B89476F7314B5848F3E965D /* Pods-DDNetCheck-umbrella.h */,
-				D01020BD846CE4D558AD5CC18FCD7D92 /* Pods-DDNetCheck.debug.xcconfig */,
-				4A792292A27BFFA477B8F9A88E04C9B6 /* Pods-DDNetCheck.release.xcconfig */,
-			);
-			name = "Pods-DDNetCheck";
-			path = "Target Support Files/Pods-DDNetCheck";
-			sourceTree = "<group>";
-		};
-		9616DB623D6B3965FBB91EE9685F60BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4F9A4A5179F8CCFC37A63CAF3F7768C /* DDPingTools */,
-				167CB35BD52938A14E377D998F22457B /* Pods-DDNetCheck */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AE21D66BE1CFEA0565FB11A1E1EB6419 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D7523787B951C41F762FCFDDC0E2284E /* DDPingTools */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -152,9 +799,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				AE21D66BE1CFEA0565FB11A1E1EB6419 /* Pods */,
-				9616DB623D6B3965FBB91EE9685F60BD /* Products */,
-				27DB72CEEE1D30D719EF8503A4EE1F89 /* Targets Support Files */,
+				1FD1541973B9E490875EF1D8E3D18402 /* Pods */,
+				2ED7482BE195BCE8A8D57C989EE32A39 /* Products */,
+				158A4F42BDE9394ED72D4AE87E37D6EC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,14 +813,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7523787B951C41F762FCFDDC0E2284E /* DDPingTools */ = {
+		D4DAA24F7AFBEC09830577BF6DFEDF2D /* DDLoggerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				27DA63A523C8977F6B7C43E4E8462D03 /* core */,
-				0036F130D9CFA21067E65D996B271768 /* Support Files */,
+				2A8CE3334021C417D40C19A1D7086D1B /* core */,
+				3A8AD532623B8171FD0ABF7C1DECBC84 /* Support Files */,
 			);
-			name = DDPingTools;
-			path = DDPingTools;
+			name = DDLoggerSwift;
+			path = DDLoggerSwift;
 			sourceTree = "<group>";
 		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
@@ -184,57 +831,154 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FDECADF3CA012170E7DC75DFBB66EECD /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				2D366E871E2BA2B064632A0CF68071CA /* DDUtils+AppStore.swift */,
+				B708B60DA5CA3A02CDFDE99FECC301CA /* DDUtils+UI.swift */,
+				A4CABB38C140C3105E659DE4165B8061 /* UIColor+zx.swift */,
+				1071E91418204D27DAE68D8893FD392D /* UIImage+zx.swift */,
+				B4D705C6E9EE7AB2356625CF18491054 /* UIView+zx.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5680BFAB52BD57E071B34B9C4D9B87AD /* Headers */ = {
+		521FCF73C86B5390EB225DF4E7FCEDEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9236AE2C775B0FD2AEB2B035697947C5 /* DDPingTools.h in Headers */,
-				02F6561AD9F796134DDC9794D482CB3A /* DDPingTools-umbrella.h in Headers */,
-				BCFA1E9D010062C4A0B6CA5B9FE45168 /* SimplePing.h in Headers */,
+				F400670397A1EF7DAD98A7515B7D02CD /* Pods-DDKitSwift_NetCheck-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		881FC9E36685763F0D1192C69A29D95F /* Headers */ = {
+		6955742CF957200216CA86DEFD80BB08 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49794FDB663E796ADFCA055C89CA723E /* Pods-DDNetCheck-umbrella.h in Headers */,
+				1338875BC3D743410369503AED8982AC /* DDKitSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4F4D787ABDBB75C17495EA4596D596 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7BDD5FB40E750F196EEBDFEDB65E7C /* DDUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CACA46BB8DCA27AD74E9F1B98547EDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557A4510C85B419E227AADBE6AB1A03 /* DDPingTools.h in Headers */,
+				C403B94DB3718B68EE15A58B9B7718E7 /* DDPingTools-umbrella.h in Headers */,
+				1098D4E7F1143BF5452EBC80EE2D147C /* SimplePing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8AA577AE157FDCDB0D951C0561C66E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638C91908CBC936F827C9A5BC321A2F1 /* DDNetCheck-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77127A6B15A1B7BAD923D16483DB1A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B6E794A903A97493785418F0A4931A /* DDLoggerSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1B96C236AF92F1B359A8479CD4EB58CC /* Pods-DDNetCheck */ = {
+		075933A99604C7F20A75FE3342978E35 /* DDNetCheck-DDNetCheck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 735AA5BCE9B5F189C42F34EEA25662A6 /* Build configuration list for PBXNativeTarget "Pods-DDNetCheck" */;
+			buildConfigurationList = BB770F791C24B886495AA7B2FAC410B3 /* Build configuration list for PBXNativeTarget "DDNetCheck-DDNetCheck" */;
 			buildPhases = (
-				881FC9E36685763F0D1192C69A29D95F /* Headers */,
-				92A8F00B562281F64108961BDFBB5008 /* Sources */,
-				7464C8E741FF6E7601A7CB745ED1ECE1 /* Frameworks */,
-				C8C0ED7355FD503AE526F3D75ABCFF82 /* Resources */,
+				0340CDF3E7E8754B35A614EBE2E9A766 /* Sources */,
+				7B60BE3E7A3568158DAF7FDFFD3351C9 /* Frameworks */,
+				BC64FA2B42B106B70384BDA2E043900E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				326A06D74B505F86FDA6B29F30D5BE0A /* PBXTargetDependency */,
 			);
-			name = "Pods-DDNetCheck";
-			productName = Pods_DDNetCheck;
-			productReference = 167CB35BD52938A14E377D998F22457B /* Pods-DDNetCheck */;
+			name = "DDNetCheck-DDNetCheck";
+			productName = DDNetCheck;
+			productReference = EFC2DD1C4CD151BEC83C0B936F6C5285 /* DDNetCheck-DDNetCheck */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1199A23AE1EAA19934856C5359B5D5BE /* DDKitSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A88A3734D15ADF780928E28F16AB12 /* Build configuration list for PBXNativeTarget "DDKitSwift" */;
+			buildPhases = (
+				6955742CF957200216CA86DEFD80BB08 /* Headers */,
+				22E824877B5DF498D9335D85019069A9 /* Sources */,
+				3AB4495F3437AD1ECB666658F9A85A8E /* Frameworks */,
+				3DDEA52FEBFC2D3884517E0C48B6A74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7483885D1FE4FC9F4879A2377F7C2EF6 /* PBXTargetDependency */,
+				89C09FFBE81EDE23F8FF1B12A46D2DA9 /* PBXTargetDependency */,
+				6B6EFEA129221C52D554F053BC5FB763 /* PBXTargetDependency */,
+			);
+			name = DDKitSwift;
+			productName = DDKitSwift;
+			productReference = A662AA93F65F026CEAE95B259E357B97 /* DDKitSwift */;
 			productType = "com.apple.product-type.framework";
+		};
+		3E903540BB2AEB597EFBFC8F5F01C33F /* DDKitSwift-DDKitSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25EE9F2334218639B5AECC758FC9F258 /* Build configuration list for PBXNativeTarget "DDKitSwift-DDKitSwift" */;
+			buildPhases = (
+				2815064A497717A8E63EE7AE03511FD9 /* Sources */,
+				BE9449305C4D026530F2E51AB60136AB /* Frameworks */,
+				DC24B57A25B4E020F59B8FCBA7BC4045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDKitSwift-DDKitSwift";
+			productName = DDKitSwift;
+			productReference = 67832819087A20EE754DB49E95EE7861 /* DDKitSwift-DDKitSwift */;
+			productType = "com.apple.product-type.bundle";
+		};
+		53280B0B690F632E21ADED6BA1A17543 /* DDLoggerSwift-DDLoggerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60136DDF1A20371B67AA6CCCADEDB4E /* Build configuration list for PBXNativeTarget "DDLoggerSwift-DDLoggerSwift" */;
+			buildPhases = (
+				A517399948DA081ABBDF53D7D4B69A34 /* Sources */,
+				7F5FC9F2D733B31F2D7829F16F637983 /* Frameworks */,
+				8842222E6A70A35F328CACE770CB0D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDLoggerSwift-DDLoggerSwift";
+			productName = DDLoggerSwift;
+			productReference = 6EE26D836377CA863AAAF9260E9EA901 /* DDLoggerSwift-DDLoggerSwift */;
+			productType = "com.apple.product-type.bundle";
 		};
 		64DE6FB8B8F7C02735674E52FC29E141 /* DDPingTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9804145B155CE1FB021E8FFEB353538 /* Build configuration list for PBXNativeTarget "DDPingTools" */;
+			buildConfigurationList = F0CB0BDEE23140977C489165C28DB718 /* Build configuration list for PBXNativeTarget "DDPingTools" */;
 			buildPhases = (
-				5680BFAB52BD57E071B34B9C4D9B87AD /* Headers */,
-				B49D944DDE9F34ED797A22611278026A /* Sources */,
-				DAA782E13C3540701B476FCF498DD2EF /* Frameworks */,
-				C8CD6DAA13259706462960375E62ECFD /* Resources */,
+				9CACA46BB8DCA27AD74E9F1B98547EDD /* Headers */,
+				1AE97E90AD400FB789A972EA26691775 /* Sources */,
+				FBCD8C81AA9FD1153E3683DD0DA342E9 /* Frameworks */,
+				914352A8C9F9D7316C493C8A8FCCC3BF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +987,87 @@
 			name = DDPingTools;
 			productName = DDPingTools;
 			productReference = A4F9A4A5179F8CCFC37A63CAF3F7768C /* DDPingTools */;
+			productType = "com.apple.product-type.framework";
+		};
+		6711AC8E36E99F0C279C118DB91FEDDC /* DDNetCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8AF14CA6FFC6D4E9034E2537C076E4 /* Build configuration list for PBXNativeTarget "DDNetCheck" */;
+			buildPhases = (
+				B8AA577AE157FDCDB0D951C0561C66E7 /* Headers */,
+				4B887A82F21FA0E4D92DF0FE249D7E76 /* Sources */,
+				47696C5465443ABB5813E68B19DB48D4 /* Frameworks */,
+				EE3FED161C7F2532214B76A10EA55A18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E0543638F4EF06AAFF30F4EBE07D92 /* PBXTargetDependency */,
+				EB211C23A960E858EAE77D765310927D /* PBXTargetDependency */,
+			);
+			name = DDNetCheck;
+			productName = DDNetCheck;
+			productReference = 27A87C460ADDB1D6C1B2971BD7C28B91 /* DDNetCheck */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C6C8469557C975FD411C9A3AB1489FB /* Pods-DDKitSwift_NetCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFC9E6CC1FF7372449270E62AAB558D /* Build configuration list for PBXNativeTarget "Pods-DDKitSwift_NetCheck" */;
+			buildPhases = (
+				521FCF73C86B5390EB225DF4E7FCEDEC /* Headers */,
+				EA62035A586A96C1AEF94ED448CA2791 /* Sources */,
+				7277B64831447D9AC8713D9C5FA84BAC /* Frameworks */,
+				1A3B76EA71DEEF701307950C2CEDF9B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39DF7F9C1356D70D6B530C33F96A64DE /* PBXTargetDependency */,
+				62806577AEDDAC27BD5C939811ACC4B6 /* PBXTargetDependency */,
+				5AF519D6C4962AF82A8907B83F21886C /* PBXTargetDependency */,
+				C2494DD3B90801A8758CE2D9DBC911C2 /* PBXTargetDependency */,
+				31C7AC35651A69C333B73E7D12CA9293 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDKitSwift_NetCheck";
+			productName = Pods_DDKitSwift_NetCheck;
+			productReference = 38B99EDFE821142E4FEA47F92685E805 /* Pods-DDKitSwift_NetCheck */;
+			productType = "com.apple.product-type.framework";
+		};
+		763460C4E0B28EA6B8A750D8642AF267 /* DDUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41337A98A1F8BE112F21812CD58981F5 /* Build configuration list for PBXNativeTarget "DDUtils" */;
+			buildPhases = (
+				6E4F4D787ABDBB75C17495EA4596D596 /* Headers */,
+				D21AB401036D2F2DDC8C6373D0104E2F /* Sources */,
+				771777BFE6DA6D7026D7717D1E4DAAA8 /* Frameworks */,
+				1516CF1DE1AD653F9220E3EE200B2E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDUtils;
+			productName = DDUtils;
+			productReference = AE255513E542A7635AA924C36C07E511 /* DDUtils */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1166E0B033B5DCD8B18503328A162BD /* DDLoggerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1DCA60D6F5966F881EF976BE702C28 /* Build configuration list for PBXNativeTarget "DDLoggerSwift" */;
+			buildPhases = (
+				E77127A6B15A1B7BAD923D16483DB1A8 /* Headers */,
+				0B49E114DCA4F2F888087D2BA0770054 /* Sources */,
+				A703727DDFB0F46416817AC2581D8184 /* Frameworks */,
+				F0CEF18F0F06777EAC227CADE6E19603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADD79ECAD94386B5B15E0B3AF9C96C30 /* PBXTargetDependency */,
+				D2063783DEEBE6E8A4870E762B4013A8 /* PBXTargetDependency */,
+			);
+			name = DDLoggerSwift;
+			productName = DDLoggerSwift;
+			productReference = CCCB7A4F8EDB94C19B81DB6C5F91E2C7 /* DDLoggerSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -261,72 +1086,415 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9616DB623D6B3965FBB91EE9685F60BD /* Products */;
+			productRefGroup = 2ED7482BE195BCE8A8D57C989EE32A39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1199A23AE1EAA19934856C5359B5D5BE /* DDKitSwift */,
+				3E903540BB2AEB597EFBFC8F5F01C33F /* DDKitSwift-DDKitSwift */,
+				A1166E0B033B5DCD8B18503328A162BD /* DDLoggerSwift */,
+				53280B0B690F632E21ADED6BA1A17543 /* DDLoggerSwift-DDLoggerSwift */,
+				6711AC8E36E99F0C279C118DB91FEDDC /* DDNetCheck */,
+				075933A99604C7F20A75FE3342978E35 /* DDNetCheck-DDNetCheck */,
 				64DE6FB8B8F7C02735674E52FC29E141 /* DDPingTools */,
-				1B96C236AF92F1B359A8479CD4EB58CC /* Pods-DDNetCheck */,
+				763460C4E0B28EA6B8A750D8642AF267 /* DDUtils */,
+				6C6C8469557C975FD411C9A3AB1489FB /* Pods-DDKitSwift_NetCheck */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C8C0ED7355FD503AE526F3D75ABCFF82 /* Resources */ = {
+		1516CF1DE1AD653F9220E3EE200B2E7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8CD6DAA13259706462960375E62ECFD /* Resources */ = {
+		1A3B76EA71DEEF701307950C2CEDF9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDEA52FEBFC2D3884517E0C48B6A74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE24A4AC9E41A6D5531722EC78D135C /* DDKitSwift-DDKitSwift in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842222E6A70A35F328CACE770CB0D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF2E41F46570DEECFE9F6F777DFA603 /* icon in Resources */,
+				62593468596BAFBE1A6847D380D5286D /* icon_analyse.png in Resources */,
+				43EF942E415F60134552F087D6A0D63F /* icon_back.png in Resources */,
+				3DE79E749164120F53C48C403DE2A7E2 /* icon_copy.png in Resources */,
+				1A95B9973829E4145283D463BEF5E34C /* icon_decrypt.png in Resources */,
+				ECFE7AA7ADADB07FD25D9E7317592F0E /* icon_delete.png in Resources */,
+				7B52361DEFB18DD55A9C5DC55E023922 /* icon_exit.png in Resources */,
+				D458FC4830EE7BAA042D2BBFAD250411 /* icon_hide.png in Resources */,
+				D5A59BC98B470F60F93EE5765B046DC5 /* icon_normal_back.png in Resources */,
+				D014B08DF7876F4A04EDC5FE4263F708 /* icon_scale.png in Resources */,
+				FC71330EF02A65CB919225DBB79408E0 /* icon_scroll.png in Resources */,
+				0BDB1AB78F09E04B19F52C240F45A625 /* icon_search.png in Resources */,
+				50AE432A0D899CB207A980F61A3FB10E /* icon_share.png in Resources */,
+				28B0A1E5CA2A1B7AA34913786BF41EAC /* icon_upload.png in Resources */,
+				40C4478D3E0EE4E1D9B15831ED3BEEB5 /* localizable in Resources */,
+				AADEC3E2C880E9D70A6977E2D6C8055E /* Localizable.strings in Resources */,
+				93EC0BC38CA1332CB3B23BAB7D634B43 /* log_icon_close.png in Resources */,
+				39051546994D5D9175DB7AC16792BDAF /* log_icon_scale.png in Resources */,
+				116406C3A97C55C3DB97C0708A8ADF4C /* log_icon_subtract.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		914352A8C9F9D7316C493C8A8FCCC3BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC64FA2B42B106B70384BDA2E043900E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6824E2F0049ACC2A4425B87362D4A482 /* appleServerConnected.png in Resources */,
+				6E946ABFFBF36242EB25DF33FE2243BD /* appleServerPing.png in Resources */,
+				C8B835257099F634CED70CF733CA6D03 /* cellular.png in Resources */,
+				B997B96B025602CC82E0EA85381BC983 /* dns.png in Resources */,
+				43E4506EABFA8D2C116D8125F78C3FD7 /* icon in Resources */,
+				EFFBFC3DF79D82318D72AD1ECE5CC127 /* icon-failed.png in Resources */,
+				C0130109996DC1D3A64CE8C88DDBA18E /* icon-success.png in Resources */,
+				5ADCF879D3DA5591137D03A1945DABDB /* ipv4.png in Resources */,
+				8AB1E28AA41C9032F83015893558A583 /* ipv6.png in Resources */,
+				BCF1898349E1D5421722B9B0614F9EC5 /* isConnected.png in Resources */,
+				39137C95B29E9F75CBAA921DA20B1430 /* isConstrained.png in Resources */,
+				78E8C26330E6DBB5ECAAFB30C8DB4F8E /* localizable in Resources */,
+				3D6E77FAF8577AADCE15F44A896C8CEB /* Localizable.strings in Resources */,
+				2EEE7DED42AFC6BDF14ECBD208376EC4 /* notAvailable.png in Resources */,
+				FCB192186C9C357815798F11673CBD91 /* ping.png in Resources */,
+				4E6F17F3C0B5C64EB60EDDAD295EB97A /* proxy.png in Resources */,
+				E6B10A6A64C47914B214237B5DEC0BDB /* vpn.png in Resources */,
+				C16E7A8919A4CD1B0BD99AC5147C821D /* wifi.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24B57A25B4E020F59B8FCBA7BC4045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC78ED3F1BA44FFD34A98F3472C5BC23 /* icon in Resources */,
+				0FC334B9D1E9220400EA1A1FBCF2BCC8 /* icon_close@3x.png in Resources */,
+				FDBE27E754F8D3795AF90D8DA6EE9D05 /* icon_home@3x.png in Resources */,
+				30C40E40BB467E5C44711B6B78268B99 /* icon_list@3x.png in Resources */,
+				FF23863769661FCF8415DCA1E14FAE32 /* icon_notice@3x.png in Resources */,
+				03C706D08834915897AB13BD9287037F /* icon_search@3x.png in Resources */,
+				48106A81397F8F72B93462754BED07A4 /* icon_setting@3x.png in Resources */,
+				FF1F57978E0B4B90EB9F86DC68C24301 /* icon_share@3x.png in Resources */,
+				3A8957F760DAF3F45FE3ACC2B26F0BA2 /* localizable in Resources */,
+				027ACE130449D81E0B675543DFB4AE68 /* Localizable.strings in Resources */,
+				F659175E348507F93E83080F183C2647 /* log_icon_close.png in Resources */,
+				B0C169C0855EF74E3DE92931245E83FE /* log_icon_scale.png in Resources */,
+				C5B0587CA71F335B3D90161EB92D1C77 /* log_icon_subtract.png in Resources */,
+				12EEC0E1CF4207DCA5B0B164632AC565 /* logger_logo@3x.png in Resources */,
+				C331AF4FC7083C9A9DACBA0DE280579C /* zx_logo@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3FED161C7F2532214B76A10EA55A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A49906B1847B2DCA690DAFF6008F146 /* DDNetCheck-DDNetCheck in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CEF18F0F06777EAC227CADE6E19603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918EB9547B1C4CE06B1BC70882290A9B /* DDLoggerSwift-DDLoggerSwift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92A8F00B562281F64108961BDFBB5008 /* Sources */ = {
+		0340CDF3E7E8754B35A614EBE2E9A766 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5900D8D6F8C0BC8F7F590A4EDAD4092F /* Pods-DDNetCheck-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B49D944DDE9F34ED797A22611278026A /* Sources */ = {
+		0B49E114DCA4F2F888087D2BA0770054 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F59E242D831726EAABF5589ED6E2FC8 /* DDPingNetworkActivityIndicator.swift in Sources */,
-				33A4099AECE094F67E43FEB9954BBE3E /* DDPingTools.swift in Sources */,
-				04AC9D6484EBE6918EC8E2B32D214BAE /* DDPingTools-dummy.m in Sources */,
-				5A954E849E58ED80820D0D31083126AD /* SimplePing.m in Sources */,
+				F29E4C32D452939A0674A5EA368EABFD /* DDLoggerSwift.swift in Sources */,
+				77915504FBD3886B4A1DF2C72DFE8EC4 /* DDLoggerSwift-dummy.m in Sources */,
+				0DC66FAC5B358C76E40FC44096DD09A5 /* DDLoggerSwiftFilterTypeView.swift in Sources */,
+				3537C7CC670C0FB45F2407628889EB03 /* DDLoggerSwiftFloatWindow.swift in Sources */,
+				02208C6B5226DDE7AE7A4FE14F374A0D /* DDLoggerSwiftItem.swift in Sources */,
+				7F135A549107DB469BCD8E4C6EB89F9F /* DDLoggerSwiftMenuCollectionViewCell.swift in Sources */,
+				60480B74A627A0EAB347DA19AB1AA671 /* DDLoggerSwiftMenuView.swift in Sources */,
+				B5EA916BC6772FE538CF2FD199341A3A /* DDLoggerSwiftPickerWindow.swift in Sources */,
+				B1562F348E83D8A892EB9B44B4C6A65F /* DDLoggerSwiftTableCellModel.swift in Sources */,
+				3711C6C85B9EFA54E719DE7AF557D823 /* DDLoggerSwiftTableViewCell.swift in Sources */,
+				B8CDA19557DCD87F0E235182E93C4C0A /* DDLoggerSwiftWindow.swift in Sources */,
+				BD678579C972DBD9526417C5197574B2 /* HDSqliteTools.swift in Sources */,
+				739528D54E11F3997FE93D484D77E57E /* LogContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE97E90AD400FB789A972EA26691775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96319A8F9C5F729D85C57C9D43A56C2 /* DDPingNetworkActivityIndicator.swift in Sources */,
+				D616071BDDA8ADA304F0A7219BB4FDBD /* DDPingTools.swift in Sources */,
+				5310370FB080952F2476FF9DBD78117B /* DDPingTools-dummy.m in Sources */,
+				7D575CAAC7DF0FB0ACEB30FC1FBAD130 /* SimplePing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E824877B5DF498D9335D85019069A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34E14ED7B5275A839161430EAB0DEF5 /* CircleMenu.swift in Sources */,
+				5D6C4798D196AF3B5EA9AC5D27496EC0 /* CircleMenuButton.swift in Sources */,
+				07A66D68CDABBEBF0802B30FF57C3DA7 /* CircleMenuLoader.swift in Sources */,
+				01D2FEA776F65BE46FA45345FBF4C877 /* CircleMenuMaskView.swift in Sources */,
+				53AB5BA33E6D569F9B086A4944A7E939 /* DDKitSwift.swift in Sources */,
+				9A18A604944F9A28DE60A1B5A82D640A /* DDKitSwift-dummy.m in Sources */,
+				62075A472A82961E2304994C898D3649 /* DDKitSwiftCollectionViewHeaderView.swift in Sources */,
+				A2E05083EB903E2279BE522B29D94933 /* DDKitSwiftFloatWindow.swift in Sources */,
+				9825D1A2CB7DF430481759C439C6912A /* DDKitSwiftPluginCollectionViewCell.swift in Sources */,
+				6180340255F62B15B6A4F92787C5C675 /* DDKitSwiftPluginProtocol.swift in Sources */,
+				EAF47A758D21613AF44A9BA543A6978D /* DDKitSwiftUIConfig.swift in Sources */,
+				B20F7E8C7DF5630884E1358FDDA3AD30 /* DDKitSwiftWindow.swift in Sources */,
+				78741D39C496E0D714CBA9301383ACF1 /* DDLoggerSwift+ddkit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2815064A497717A8E63EE7AE03511FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B887A82F21FA0E4D92DF0FE249D7E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F36C3C562159B18B181C2D6C227AE2 /* DDNetCheck.swift in Sources */,
+				8EBF9DFA5CCB40B379D73828787B572B /* DDNetCheck-dummy.m in Sources */,
+				66CE5F73966C669C4C80B8AA41748A49 /* DDNetCheckStatusView.swift in Sources */,
+				3E224DC7AA2925DD1B30A7925C9FAFEC /* DDNetCheckTableViewCell.swift in Sources */,
+				72D4E64220A6D4C3CCA6B11583830EEE /* DDNetCheckTableViewCellModel.swift in Sources */,
+				4AFA48D94AE62C70AE4648ACF1E78923 /* DDNetCheckTableViewPlatformCellModel.swift in Sources */,
+				2D510D28BB403C410AF644728A9B94D9 /* DDNetCheckTableViewTestCellModel.swift in Sources */,
+				86083A8EC9BF0122D2817AF2F6DC7D26 /* DDNetCheckTableViewWebCellModel.swift in Sources */,
+				86C73F0FE139BB0910AD7B16CA3919E1 /* DDNetCheckVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A517399948DA081ABBDF53D7D4B69A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21AB401036D2F2DDC8C6373D0104E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EADC8C07C007FC3FF2B34DBC1DDA2EA /* Data+zx.swift in Sources */,
+				4A8813F7FB9218249DCE2B4C0CAA5834 /* Date+zx.swift in Sources */,
+				62FE746F3DEAC7FD3D9C06B5EEF1CA07 /* DDUtils.swift in Sources */,
+				D99947831785536D9B10D8F423C5426B /* DDUtils+AppStore.swift in Sources */,
+				E7EADADB7BB527B21DFA505B0E6CBB0F /* DDUtils+file.swift in Sources */,
+				179B6A4275AB7D19B23E048D83F92274 /* DDUtils+media.swift in Sources */,
+				D4A31336E230210975E4D39F98BE9A09 /* DDUtils+system.swift in Sources */,
+				7C21AF72F1A360717BFF7DADCC9A6A6E /* DDUtils+UI.swift in Sources */,
+				C091F4676BE773478092FF0846215573 /* DDUtils-dummy.m in Sources */,
+				DBE1338DBD2DE5560434B943A14ADEE8 /* DDUtilsNameSpace.swift in Sources */,
+				362BAF606C28C7519FCB52D86666EE92 /* String+zx.swift in Sources */,
+				C6C551FDC967CBD23054BBCF63B60EED /* UIColor+zx.swift in Sources */,
+				C4A9A327DD6FD5EC7A3C4E23A6336A35 /* UIImage+zx.swift in Sources */,
+				931274F4B9AD9A4BE86D4A97920E246D /* UIView+zx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA62035A586A96C1AEF94ED448CA2791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED483A4220115AE1560D8C2E124152CA /* Pods-DDKitSwift_NetCheck-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		326A06D74B505F86FDA6B29F30D5BE0A /* PBXTargetDependency */ = {
+		31C7AC35651A69C333B73E7D12CA9293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDUtils;
+			target = 763460C4E0B28EA6B8A750D8642AF267 /* DDUtils */;
+			targetProxy = 59461CC0B8B29625249C6E9FCA6CA999 /* PBXContainerItemProxy */;
+		};
+		31E0543638F4EF06AAFF30F4EBE07D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDNetCheck-DDNetCheck";
+			target = 075933A99604C7F20A75FE3342978E35 /* DDNetCheck-DDNetCheck */;
+			targetProxy = 43B89592ABBD59F542052A90AB5BD0E4 /* PBXContainerItemProxy */;
+		};
+		39DF7F9C1356D70D6B530C33F96A64DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDKitSwift;
+			target = 1199A23AE1EAA19934856C5359B5D5BE /* DDKitSwift */;
+			targetProxy = 78297C64471E2E2B1517822F8A576FBB /* PBXContainerItemProxy */;
+		};
+		5AF519D6C4962AF82A8907B83F21886C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDNetCheck;
+			target = 6711AC8E36E99F0C279C118DB91FEDDC /* DDNetCheck */;
+			targetProxy = F8B2769F1653161E82E47DC77CF8C720 /* PBXContainerItemProxy */;
+		};
+		62806577AEDDAC27BD5C939811ACC4B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDLoggerSwift;
+			target = A1166E0B033B5DCD8B18503328A162BD /* DDLoggerSwift */;
+			targetProxy = 61763D296EED1BD287AF631AC2D48968 /* PBXContainerItemProxy */;
+		};
+		6B6EFEA129221C52D554F053BC5FB763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDUtils;
+			target = 763460C4E0B28EA6B8A750D8642AF267 /* DDUtils */;
+			targetProxy = 591C31EA64AFDCCF7870CB80DD0911D1 /* PBXContainerItemProxy */;
+		};
+		7483885D1FE4FC9F4879A2377F7C2EF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDKitSwift-DDKitSwift";
+			target = 3E903540BB2AEB597EFBFC8F5F01C33F /* DDKitSwift-DDKitSwift */;
+			targetProxy = C8D2F7D107E5D5C8D109EFD6DB0C4659 /* PBXContainerItemProxy */;
+		};
+		89C09FFBE81EDE23F8FF1B12A46D2DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDLoggerSwift;
+			target = A1166E0B033B5DCD8B18503328A162BD /* DDLoggerSwift */;
+			targetProxy = BC06536EFCA9ECB45DF81153CF7726FD /* PBXContainerItemProxy */;
+		};
+		ADD79ECAD94386B5B15E0B3AF9C96C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDLoggerSwift-DDLoggerSwift";
+			target = 53280B0B690F632E21ADED6BA1A17543 /* DDLoggerSwift-DDLoggerSwift */;
+			targetProxy = A20A6290ECFAEF8D446063A25A3DE556 /* PBXContainerItemProxy */;
+		};
+		C2494DD3B90801A8758CE2D9DBC911C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DDPingTools;
 			target = 64DE6FB8B8F7C02735674E52FC29E141 /* DDPingTools */;
-			targetProxy = 7CC6FB7946802472D031A6C4904DA73B /* PBXContainerItemProxy */;
+			targetProxy = 4DF19A9869D36F3900D18AF008AF17B8 /* PBXContainerItemProxy */;
+		};
+		D2063783DEEBE6E8A4870E762B4013A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDUtils;
+			target = 763460C4E0B28EA6B8A750D8642AF267 /* DDUtils */;
+			targetProxy = 7277187EA1F25359D3F50177A9EF9A03 /* PBXContainerItemProxy */;
+		};
+		EB211C23A960E858EAE77D765310927D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDPingTools;
+			target = 64DE6FB8B8F7C02735674E52FC29E141 /* DDPingTools */;
+			targetProxy = AF8DB1A896828CAB2BDB9022700191E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		BCBEAE335AA31A77580427911F1DFC33 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E0EF652E19009EB5ACC8C9567FCB64E /* Localizable.strings */,
+				01C1B74379F4562AE49B8FDF637C9F39 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = pod/assets/localizable;
+			sourceTree = "<group>";
+		};
+		CB0FA819F1611DBECB067BB1552E6457 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				252EB1C758F6890AF344404F105ADB2F /* Localizable.strings */,
+				900D3D258AFBA250A1A4B9227D5127E8 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = Pods/assets/localizable;
+			sourceTree = "<group>";
+		};
+		D7855D068956BF646D92964DC85D61EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A73FFAA28202A77051AAAC4824C5DC /* Localizable.strings */,
+				87534E1972BF72841083EDD526B7A1F5 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = pod/assets/localizable;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		032C2B5DB2AC7D87BC03DF299706CE84 /* Debug */ = {
+		05BC2B024929D9DC41DDC90741576ED1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60308833F30CAD3753F78553207AB458 /* DDPingTools.debug.xcconfig */;
+			baseConfigurationReference = 2C0851D12BB2B9EC4078456479687807 /* DDLoggerSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDLoggerSwift";
+				IBSC_MODULE = DDLoggerSwift;
+				INFOPLIST_FILE = "Target Support Files/DDLoggerSwift/ResourceBundle-DDLoggerSwift-DDLoggerSwift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDLoggerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		069D032169F0C5946DCE509065E359FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB77AE267ACC12FB5DE7486E44FDEAD6 /* DDKitSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDKitSwift";
+				IBSC_MODULE = DDKitSwift;
+				INFOPLIST_FILE = "Target Support Files/DDKitSwift/ResourceBundle-DDKitSwift-DDKitSwift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDKitSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		18E81FB6A858998C4E404516A2F25A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB77AE267ACC12FB5DE7486E44FDEAD6 /* DDKitSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -339,19 +1507,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/DDPingTools/DDPingTools-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/DDKitSwift/DDKitSwift-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/DDPingTools/DDPingTools-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/DDKitSwift/DDKitSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/DDPingTools/DDPingTools.modulemap";
-				PRODUCT_MODULE_NAME = DDPingTools;
-				PRODUCT_NAME = DDPingTools;
+				MODULEMAP_FILE = "Target Support Files/DDKitSwift/DDKitSwift.modulemap";
+				PRODUCT_MODULE_NAME = DDKitSwift;
+				PRODUCT_NAME = DDKitSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -363,188 +1531,7 @@
 			};
 			name = Debug;
 		};
-		2F2BA0B8B03036E32809797227AF257C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D01020BD846CE4D558AD5CC18FCD7D92 /* Pods-DDNetCheck.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-DDNetCheck/Pods-DDNetCheck-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDNetCheck/Pods-DDNetCheck.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AD715F53C7AB4BB240393D7347375029 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDEA85AF9F97EC731CD370A7ECC692C1 /* DDPingTools.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/DDPingTools/DDPingTools-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/DDPingTools/DDPingTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DDPingTools/DDPingTools.modulemap";
-				PRODUCT_MODULE_NAME = DDPingTools;
-				PRODUCT_NAME = DDPingTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B86D71A5E7AB53EB2C08DEA39FBD2050 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		BC62759BF8C019F830C9173E048F8AB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A792292A27BFFA477B8F9A88E04C9B6 /* Pods-DDNetCheck.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-DDNetCheck/Pods-DDNetCheck-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDNetCheck/Pods-DDNetCheck.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BD5E84F7B72D348654A4D58B6BA51118 /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -597,7 +1584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -610,32 +1597,660 @@
 			};
 			name = Debug;
 		};
+		58A83287D42F367EBADFDEC429E61C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB7049808B811240F761A3D112D415B /* DDNetCheck.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDNetCheck/DDNetCheck-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDNetCheck/DDNetCheck-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDNetCheck/DDNetCheck.modulemap";
+				PRODUCT_MODULE_NAME = DDNetCheck;
+				PRODUCT_NAME = DDNetCheck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5AD44F4C82615C1C3BA08A72F69820B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF2898522BAD2F59CD78F5C4A01D708 /* DDKitSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDKitSwift";
+				IBSC_MODULE = DDKitSwift;
+				INFOPLIST_FILE = "Target Support Files/DDKitSwift/ResourceBundle-DDKitSwift-DDKitSwift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDKitSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		698B123FEEAC7EAD956EFE2005E2F6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D618657B2443D896AC6E61531A6E7A /* DDNetCheck.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDNetCheck/DDNetCheck-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDNetCheck/DDNetCheck-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDNetCheck/DDNetCheck.modulemap";
+				PRODUCT_MODULE_NAME = DDNetCheck;
+				PRODUCT_NAME = DDNetCheck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6ED1D09DCFA63C4B96FF862D1F4ACC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A267061EBDA10F49E1246100535A0A /* DDUtils.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDUtils/DDUtils-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDUtils/DDUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDUtils/DDUtils.modulemap";
+				PRODUCT_MODULE_NAME = DDUtils;
+				PRODUCT_NAME = DDUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75221E4BB59FFDD9F0407D2752AEB585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D618657B2443D896AC6E61531A6E7A /* DDNetCheck.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDNetCheck";
+				IBSC_MODULE = DDNetCheck;
+				INFOPLIST_FILE = "Target Support Files/DDNetCheck/ResourceBundle-DDNetCheck-DDNetCheck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDNetCheck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7E87023875B9E25F48B79D0086EAE489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF308CA96F7876DA46E28D5663C411C6 /* DDLoggerSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDLoggerSwift/DDLoggerSwift-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDLoggerSwift/DDLoggerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDLoggerSwift/DDLoggerSwift.modulemap";
+				PRODUCT_MODULE_NAME = DDLoggerSwift;
+				PRODUCT_NAME = DDLoggerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E4D2812E13B4F7DBF727B0AE00ACDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A1A3A3DC189CF91A0E35670D8B9C93 /* Pods-DDKitSwift_NetCheck.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-DDKitSwift_NetCheck/Pods-DDKitSwift_NetCheck-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDKitSwift_NetCheck/Pods-DDKitSwift_NetCheck.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90B42CED8C79A4379A910744B8C6C058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF308CA96F7876DA46E28D5663C411C6 /* DDLoggerSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDLoggerSwift";
+				IBSC_MODULE = DDLoggerSwift;
+				INFOPLIST_FILE = "Target Support Files/DDLoggerSwift/ResourceBundle-DDLoggerSwift-DDLoggerSwift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDLoggerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		960439CFA230B513CA137C89486C1320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4C7FD6B26F0B145CA27BCFEDBF42AE /* DDPingTools.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDPingTools/DDPingTools-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDPingTools/DDPingTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDPingTools/DDPingTools.modulemap";
+				PRODUCT_MODULE_NAME = DDPingTools;
+				PRODUCT_NAME = DDPingTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97C53E732EEB64ED34D6BCF1AC7A0B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB7049808B811240F761A3D112D415B /* DDNetCheck.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DDNetCheck";
+				IBSC_MODULE = DDNetCheck;
+				INFOPLIST_FILE = "Target Support Files/DDNetCheck/ResourceBundle-DDNetCheck-DDNetCheck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DDNetCheck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A91C8D7861855A7977337E78AC56CB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF2898522BAD2F59CD78F5C4A01D708 /* DDKitSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDKitSwift/DDKitSwift-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDKitSwift/DDKitSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDKitSwift/DDKitSwift.modulemap";
+				PRODUCT_MODULE_NAME = DDKitSwift;
+				PRODUCT_NAME = DDKitSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE534CBA2C96E9DEC54923C203864C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0851D12BB2B9EC4078456479687807 /* DDLoggerSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDLoggerSwift/DDLoggerSwift-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDLoggerSwift/DDLoggerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDLoggerSwift/DDLoggerSwift.modulemap";
+				PRODUCT_MODULE_NAME = DDLoggerSwift;
+				PRODUCT_NAME = DDLoggerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA4DE6184DDD10D9C580832FE6AECB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17B4FF48411B2ECFE00E23FE45DC058 /* DDUtils.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDUtils/DDUtils-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDUtils/DDUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDUtils/DDUtils.modulemap";
+				PRODUCT_MODULE_NAME = DDUtils;
+				PRODUCT_NAME = DDUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9120A8266EBD6A629A2835B3B5FECF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2325EDA752707C24279F84195E767E2F /* DDPingTools.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DDPingTools/DDPingTools-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DDPingTools/DDPingTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDPingTools/DDPingTools.modulemap";
+				PRODUCT_MODULE_NAME = DDPingTools;
+				PRODUCT_NAME = DDPingTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6F9B7A9318FC14142EB6758A1B3413E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61F4045F048BBC224BAE0880E5AD85A /* Pods-DDKitSwift_NetCheck.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-DDKitSwift_NetCheck/Pods-DDKitSwift_NetCheck-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDKitSwift_NetCheck/Pods-DDKitSwift_NetCheck.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		25EE9F2334218639B5AECC758FC9F258 /* Build configuration list for PBXNativeTarget "DDKitSwift-DDKitSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069D032169F0C5946DCE509065E359FF /* Debug */,
+				5AD44F4C82615C1C3BA08A72F69820B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41337A98A1F8BE112F21812CD58981F5 /* Build configuration list for PBXNativeTarget "DDUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4DE6184DDD10D9C580832FE6AECB3C /* Debug */,
+				6ED1D09DCFA63C4B96FF862D1F4ACC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD5E84F7B72D348654A4D58B6BA51118 /* Debug */,
-				B86D71A5E7AB53EB2C08DEA39FBD2050 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		735AA5BCE9B5F189C42F34EEA25662A6 /* Build configuration list for PBXNativeTarget "Pods-DDNetCheck" */ = {
+		54A88A3734D15ADF780928E28F16AB12 /* Build configuration list for PBXNativeTarget "DDKitSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F2BA0B8B03036E32809797227AF257C /* Debug */,
-				BC62759BF8C019F830C9173E048F8AB8 /* Release */,
+				18E81FB6A858998C4E404516A2F25A2C /* Debug */,
+				A91C8D7861855A7977337E78AC56CB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9804145B155CE1FB021E8FFEB353538 /* Build configuration list for PBXNativeTarget "DDPingTools" */ = {
+		BB770F791C24B886495AA7B2FAC410B3 /* Build configuration list for PBXNativeTarget "DDNetCheck-DDNetCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				032C2B5DB2AC7D87BC03DF299706CE84 /* Debug */,
-				AD715F53C7AB4BB240393D7347375029 /* Release */,
+				97C53E732EEB64ED34D6BCF1AC7A0B94 /* Debug */,
+				75221E4BB59FFDD9F0407D2752AEB585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1DCA60D6F5966F881EF976BE702C28 /* Build configuration list for PBXNativeTarget "DDLoggerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E87023875B9E25F48B79D0086EAE489 /* Debug */,
+				BE534CBA2C96E9DEC54923C203864C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFC9E6CC1FF7372449270E62AAB558D /* Build configuration list for PBXNativeTarget "Pods-DDKitSwift_NetCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4D2812E13B4F7DBF727B0AE00ACDEC /* Debug */,
+				F6F9B7A9318FC14142EB6758A1B3413E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CB0BDEE23140977C489165C28DB718 /* Build configuration list for PBXNativeTarget "DDPingTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9120A8266EBD6A629A2835B3B5FECF0 /* Debug */,
+				960439CFA230B513CA137C89486C1320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60136DDF1A20371B67AA6CCCADEDB4E /* Build configuration list for PBXNativeTarget "DDLoggerSwift-DDLoggerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B42CED8C79A4379A910744B8C6C058 /* Debug */,
+				05BC2B024929D9DC41DDC90741576ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8AF14CA6FFC6D4E9034E2537C076E4 /* Build configuration list for PBXNativeTarget "DDNetCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A83287D42F367EBADFDEC429E61C2D /* Debug */,
+				698B123FEEAC7EAD956EFE2005E2F6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

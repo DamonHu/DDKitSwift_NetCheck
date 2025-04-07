@@ -1,18 +1,45 @@
 PODS:
+  - DDKitSwift/core (3.0.6):
+    - DDLoggerSwift (~> 5)
+    - DDUtils/ui (~> 5)
+    - DDUtils/utils (~> 5)
+  - DDLoggerSwift (5.3.1):
+    - DDLoggerSwift/core (= 5.3.1)
+  - DDLoggerSwift/core (5.3.1):
+    - DDUtils/ui (~> 5)
+    - DDUtils/utils (~> 5)
+  - DDNetCheck (1.0.3):
+    - DDNetCheck/core (= 1.0.3)
+  - DDNetCheck/core (1.0.3):
+    - DDPingTools
   - DDPingTools (3.0.1):
     - DDPingTools/core (= 3.0.1)
   - DDPingTools/core (3.0.1)
+  - DDUtils/core (5.0.13)
+  - DDUtils/ui (5.0.13):
+    - DDUtils/core
+  - DDUtils/utils (5.0.13):
+    - DDUtils/core
 
 DEPENDENCIES:
-  - DDPingTools
+  - DDKitSwift/core
+  - DDNetCheck
 
 SPEC REPOS:
   trunk:
+    - DDKitSwift
+    - DDLoggerSwift
+    - DDNetCheck
     - DDPingTools
+    - DDUtils
 
 SPEC CHECKSUMS:
+  DDKitSwift: ce3b55158e03a88081db0f723292907e3fea0859
+  DDLoggerSwift: c7c8776b2e56c741ef3c3de8cfaa3eadb2fcf813
+  DDNetCheck: e0fe8ff584d6f52ecdd92ee302981e343c5a9af7
   DDPingTools: b08b9d3c0801f59754e43c56a14306ec0c0a33b4
+  DDUtils: 9d1dab6514cbe6687348bde7ea0f6f2187b55222
 
-PODFILE CHECKSUM: b357d3f2038ed3e5a807f52f4e2d35cd1b930c23
+PODFILE CHECKSUM: 2825423bc89890269cbd22389d6687975667572c
 
 COCOAPODS: 1.16.2

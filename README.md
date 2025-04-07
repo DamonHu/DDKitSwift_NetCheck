@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Ping plugin for [DDKitSwift](https://github.com/DamonHu/DDKitSwift)， build with [DamonHu/NetCheck](https://github.com/DamonHu/NetCheck)
+Ping plugin for [DDKitSwift](https://github.com/DamonHu/DDKitSwift)， build with [DamonHu/DDNetCheck](https://github.com/DamonHu/DDNetCheck)
 
 ## Regist
 

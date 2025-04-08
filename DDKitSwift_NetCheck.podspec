@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 s.name = 'DDKitSwift_NetCheck'
 s.swift_version = '5.0'
-s.version = '1.0.0'
+s.version = '1.0.1'
 s.license= { :type => "MIT", :file => "LICENSE" }
-s.summary = "iOS Ping tool, based on Apple's simplePing project"
+s.summary = "A network status diagnostic tool for iOS, compatible with DDKitSwift"
 s.homepage = 'https://github.com/DamonHu/DDKitSwift_NetCheck'
 s.authors = { 'DamonHu' => 'dong765@qq.com' }
 s.source = { :git => "https://github.com/DamonHu/DDKitSwift_NetCheck", :tag => s.version}
@@ -15,7 +15,7 @@ s.subspec 'core' do |cs|
     }
     cs.source_files = "Pods/*.swift"
     cs.dependency 'DDNetCheck'
-    cs.dependency 'DDKitSwift/core'
+    cs.dependency 'DDKitSwift/core', '~> 4'
 end
 
 s.default_subspecs = "core"

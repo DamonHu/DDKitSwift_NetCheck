@@ -18,7 +18,6 @@ func UIImageHDBoundle(named: String?) -> UIImage? {
 //ZXKitPlugin
 open class DDKitSwift_NetCheck: DDKitSwiftPluginProtocol {
     public var isRunning: Bool = false
-    private let tool = DDNetCheck()
     private var url: String
     
     public init(url: String) {
@@ -47,6 +46,6 @@ open class DDKitSwift_NetCheck: DDKitSwiftPluginProtocol {
     }
     
     public func stop() {
-        self.tool.hideVC()
+        
     }
 }

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name = 'DDKitSwift_NetCheck'
 s.swift_version = '5.0'
-s.version = '1.0.1'
+s.version = '1.0.2'
 s.license= { :type => "MIT", :file => "LICENSE" }
 s.summary = "A network status diagnostic tool for iOS, compatible with DDKitSwift"
 s.homepage = 'https://github.com/DamonHu/DDKitSwift_NetCheck'
@@ -11,7 +11,7 @@ s.requires_arc = true
 s.ios.deployment_target = '12.0'
 s.subspec 'core' do |cs|
     cs.resource_bundles = {
-      'DDNetCheck' => ['Pods/assets/**/*']
+      'DDKitSwift_NetCheck' => ['Pods/assets/**/*']
     }
     cs.source_files = "Pods/*.swift"
     cs.dependency 'DDNetCheck'

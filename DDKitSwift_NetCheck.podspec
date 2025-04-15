@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name = 'DDKitSwift_NetCheck'
 s.swift_version = '5.0'
-s.version = '1.0.2'
+s.version = '1.0.3'
 s.license= { :type => "MIT", :file => "LICENSE" }
 s.summary = "A network status diagnostic tool for iOS, compatible with DDKitSwift"
 s.homepage = 'https://github.com/DamonHu/DDKitSwift_NetCheck'
